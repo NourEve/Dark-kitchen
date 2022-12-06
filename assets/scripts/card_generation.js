@@ -5,7 +5,7 @@ const italianDishes = [
         subCat: "Tomato",
         description: "Parmesan, gorgonzola, mozzarella and provolone",
         price: "10€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/Pizza-quatre-fromages-traditionnelle-italienne.jpg"
     },
 
     {
@@ -14,7 +14,7 @@ const italianDishes = [
         subCat: "Tomato",
         description: "tomato, mozzarella, fresh basilic, salt and olive oil.",
         price: "8€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/Margherita-Pizza-scaled.jpg"
     },
 
     {
@@ -23,7 +23,7 @@ const italianDishes = [
         subCat: "Cream",
         description: "Tomato, mozzarella, spicy salami, onions",
         price: "12€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/pizza-pepperoni.jpg"
     },
 
     {
@@ -32,192 +32,183 @@ const italianDishes = [
         subCat: "Tomato",
         description: "Peeled tomato, oil, garlic, oregano and salt.",
         price: "7€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/pizza_napolitaine-659x600.jpg"
     },
 
     {
-        dishName: "Scampis", // excuse my french
+        dishName: "Scampis",
         mainCat: "Pizza",
         subCat: "Cream",
         description: "Mozzarella, scampis, feta cheese, tomato, fennel, oregano, black olives.",
         price: "13.50€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/pizza-scampis.jpg"
     },
 
     {
-        dishName: "Ham-Mushroom", // excuse my french
+        dishName: "Ham-Mushroom",
         mainCat: "Pizza",
         subCat: "Calzone",
         description: "Mushrooms, gruyère cheese, oregano, ham, mozzarella, green olives , tomato.",
         price: "14€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/calzone-jambon-champi.jpg"
     },
 
     {
-        dishName: "Tomato-Mozarrella", // excuse my french
+        dishName: "Tomato-Mozarrella",
         mainCat: "Pizza",
         subCat: "Calzone",
         description: "Mozzarella, tomato, fresh basilic.",
         price: "12.50€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/calzone-tomate-mozza.jpg"
     },
 
     {
-        dishName: "Bolognèse", // excuse my french
+        dishName: "Bolognèse",
         mainCat: "Pasta",
         subCat: "Spaghetti",
         description: "Ground beef, tomato sauce, onions, celery, carots, and olive oil.",
         price: "10.50€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/pâte-bolognaise.jpg"
     },
 
     {
-        dishName: "4 Cheeses", // excuse my french
+        dishName: "4 Cheeses",
         mainCat: "Pasta",
         subCat: "Penne",
         description: "Parmesan, gorgonzola, mozzarella, comté.",
         price: "11€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/penne-4-fromages.jpg"
     },
 
 
     {
-        dishName: "Tartufa", // excuse my french
+        dishName: "Tartufa",
         mainCat: "Pasta",
         subCat: "Penne",
-        description: " Black truffle, sour cream, fresh basilic.",
+        description: "Black truffle, sour cream, fresh basilic.",
         price: "10.50€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/penne-a-la-truffe-creme.jpg"
     },
 
     {
-        dishName: "Vongole", // excuse my french
+        dishName: "Vongole",
         mainCat: "Pasta",
         subCat: "Spaghetti",
         description: "Clams, cherry tomatoes, white wine, garlic, parsley.",
         price: "13.50€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/pate-vongole.jpg"
     },
 
 
     {
-        dishName: "Crème brulée", // excuse my french
+        dishName: "Crème brulée",
         mainCat: "Desserts",
         subCat: "",
         description: "Chef's crème brulée, made of vanilla and caramel.",
         price: "6.50€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/dessert-creme-brulee.jpeg"
     },
 
 
     {
-        dishName: "Tiramisu", // excuse my french
+        dishName: "Tiramisu",
         mainCat: "Desserts",
         subCat: "",
         description: "The Chef'speciality , traditionnal recepe! ",
         price: "7€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/dessert-tiramisu.jpg"
     },
 
 
     {
-        dishName: "Apple crumble", // excuse my french
+        dishName: "Apple crumble",
         mainCat: "Desserts",
         subCat: "",
-        description: "For the pleasure of the greediest, a sweet sweetness. ",
+        description: "For the pleasure of the greediest, a sweet sweetness.",
         price: "7.50€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/crumble-aux-pommes.jpeg"
     },
 
     {
-        dishName: "Fanta", // excuse my french
+        dishName: "Fanta",
         mainCat: "Beverage",
         subCat: "Soft",
         description: "",
         price: "2.50€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/boissons-soft.jpeg"
     },
 
     {
-        dishName: "Coca-Cola", // excuse my french
+        dishName: "Coca-Cola",
         mainCat: "Beverage",
         subCat: "Soft",
         description: "",
         price: "2.50€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/boissons-soft.jpeg"
     },
 
     {
-        dishName: "Water", // excuse my french
+        dishName: "Water",
         mainCat: "Beverage",
         subCat: "Soft",
         description: "Still",
         price: "2.50€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/boissons-soft.jpeg"
     },
     {
-        dishName: "Water", // excuse my french
+        dishName: "Water",
         mainCat: "Beverage",
         subCat: "Soft",
         description: "Sparkling",
         price: "2.50€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/boissons-soft.jpeg"
     },
 
     {
-        dishName: "Coca-Cola", // excuse my french
+        dishName: "Coca-Cola",
         mainCat: "Beverage",
         subCat: "Soft",
         description: "Light",
         price: "2.50€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/boissons-soft.jpeg"
     },
 
     {
-        dishName: "Coca-Cola", // excuse my french
+        dishName: "Coca-Cola",
         mainCat: "Beverage",
         subCat: "Soft",
         description: "Zéro",
         price: "2.50€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/boissons-soft.jpeg"
     },
 
     {
-        dishName: "Sprite", // excuse my french
+        dishName: "Sprite",
         mainCat: "Beverage",
         subCat: "Soft",
         description: "",
         price: "2.50€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/boissons-soft.jpeg"
     },
 
     {
-        dishName: "Red wine", // excuse my french
+        dishName: "Red wine",
         mainCat: "Beverage",
         subCat: "Alcohols",
         description: "Lambrusco",
         price: "18.50€", // €
-        icon: "./assets/images/YOUR/icon"
+        icon: "./assets/images/vins.jpeg"
     },
 
     {
-        dishName: "White wine", // excuse my french
+        dishName: "White wine",
         mainCat: "Beverage",
         subCat: "Alcohols",
         description: "Pinot grigio",
         price: "15€", // €
-        icon: "./assets/images/YOUR/icon"
-    },
-
-
-
-
-
-
-
-];
-
-// italianDishes.sort(() => Math.random() - 0.5);
+        icon: "./assets/images/vins.jpeg"
+    }
+]
 
 function generateCards() {
     let main = document.getElementsByTagName("main")[0];
