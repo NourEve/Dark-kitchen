@@ -13,7 +13,7 @@ const italianDishes = [
         mainCat: "Pizza",
         subCat: "Tomato",
         description: "tomates, mozzarella, basilic frais, sel et huile d'olive.",
-        price: "8.50€", // €
+        price: "8€", // €
         icon: "./assets/images/YOUR/icon"
     },
 
@@ -196,7 +196,7 @@ const italianDishes = [
         mainCat: "Boissons",
         subCat: "Alcools",
         description: "Lambrusco",
-        price: "18€", // €
+        price: "18.50€", // €
         icon: "./assets/images/YOUR/icon"
     },
 
