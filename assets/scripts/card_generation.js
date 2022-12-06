@@ -3,7 +3,7 @@ const italianDishes = [
         dishName: "Quatro Fromaggi",
         mainCat: "Pizza",
         subCat: "Tomato",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur reiciendis blanditiis beatae placeat harum, deleniti laborum, corrupti aliquam temporibus architecto eveniet facere unde cum? Labore a sunt natus illum!",
+        description: "Parmesan, gorgonzola, mozzarella et du provolone",
         price: "10€", // €
         icon: "./assets/images/YOUR/icon"
     },
@@ -12,37 +12,208 @@ const italianDishes = [
         dishName: "Margherita",
         mainCat: "Pizza",
         subCat: "Tomato",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur reiciendis blanditiis beatae placeat harum, deleniti laborum, corrupti aliquam temporibus architecto eveniet facere unde cum? Labore a sunt natus illum!",
+        description: "tomates, mozzarella, basilic frais, sel et huile d'olive.",
         price: "8.50€", // €
         icon: "./assets/images/YOUR/icon"
     },
 
     {
-        dishName: "Capra Miele",
+        dishName: "Pepperoni",
         mainCat: "Pizza",
         subCat: "Cream",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur reiciendis blanditiis beatae placeat harum, deleniti laborum, corrupti aliquam temporibus architecto eveniet facere unde cum? Labore a sunt natus illum!",
+        description: "Tomate, mozzarella, salami piquant, oignons",
         price: "12€", // €
         icon: "./assets/images/YOUR/icon"
     },
 
     {
-        dishName: "Reine",
+        dishName: "Napolitaine",
         mainCat: "Pizza",
         subCat: "Tomato",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur reiciendis blanditiis beatae placeat harum, deleniti laborum, corrupti aliquam temporibus architecto eveniet facere unde cum? Labore a sunt natus illum!",
+        description: "Tomates pelées, huile, ail, origan et sel.",
         price: "7€", // €
         icon: "./assets/images/YOUR/icon"
     },
 
     {
-        dishName: "Savoyarde", // excuse my french
+        dishName: "Scampis", // excuse my french
         mainCat: "Pizza",
         subCat: "Cream",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur reiciendis blanditiis beatae placeat harum, deleniti laborum, corrupti aliquam temporibus architecto eveniet facere unde cum? Labore a sunt natus illum!",
+        description: "Mozzarella, scampis, feta, tomates, fenouil, origan, olives noires.",
         price: "13.50€", // €
         icon: "./assets/images/YOUR/icon"
     },
+
+    {
+        dishName: "Jambon-Champignon", // excuse my french
+        mainCat: "Pizza",
+        subCat: "Calzone",
+        description: "Champignons, gruyère, origan, jambon, mozzarella, olives vertes, tomate.",
+        price: "14€", // €
+        icon: "./assets/images/YOUR/icon"
+    },
+
+    {
+        dishName: "Tomate-Mozarrella", // excuse my french
+        mainCat: "Pizza",
+        subCat: "Calzone",
+        description: "Mozzarella, tomates, basilic.",
+        price: "12.50€", // €
+        icon: "./assets/images/YOUR/icon"
+    },
+
+    {
+        dishName: "Bolognèse", // excuse my french
+        mainCat: "Pâtes",
+        subCat: "Spaghetti",
+        description: "Bœuf haché, sauce tomate, oignon, céleri, carottes, et huile d'olive.",
+        price: "10.50€", // €
+        icon: "./assets/images/YOUR/icon"
+    },
+
+    {
+        dishName: "4 fromages", // excuse my french
+        mainCat: "Pâtes",
+        subCat: "Penne",
+        description: "Parmesan, gorgonzola, mozzarella, comté.",
+        price: "11€", // €
+        icon: "./assets/images/YOUR/icon"
+    },
+
+
+    {
+        dishName: "Tartufa", // excuse my french
+        mainCat: "Pâtes",
+        subCat: "Penne",
+        description: "Truffe noire, crème fraiche, basilic.",
+        price: "10.50€", // €
+        icon: "./assets/images/YOUR/icon"
+    },
+
+    {
+        dishName: "Vongole", // excuse my french
+        mainCat: "Pâtes",
+        subCat: "Spaghetti",
+        description: "Palourdes, tomates cerises, vin blanc, ail, persil.",
+        price: "13.50€", // €
+        icon: "./assets/images/YOUR/icon"
+    },
+
+
+    {
+        dishName: "Crème brulée", // excuse my french
+        mainCat: "Desserts",
+        subCat: "",
+        description: "Crème brulée du chef, à base de vanille et de caramel.",
+        price: "6.50€", // €
+        icon: "./assets/images/YOUR/icon"
+    },
+
+
+    {
+        dishName: "Tiramisu", // excuse my french
+        mainCat: "Desserts",
+        subCat: "",
+        description: "Spécialité du chef, recette traditionnelle! ",
+        price: "7€", // €
+        icon: "./assets/images/YOUR/icon"
+    },
+
+
+    {
+        dishName: "Crumble aux pommes", // excuse my french
+        mainCat: "Desserts",
+        subCat: "",
+        description: "Pour le plaisir des plus gourmands, une douceur sucrée ",
+        price: "7.50€", // €
+        icon: "./assets/images/YOUR/icon"
+    },
+
+    {
+        dishName: "Fanta", // excuse my french
+        mainCat: "Boissons",
+        subCat: "Soft",
+        description: "",
+        price: "2.50€", // €
+        icon: "./assets/images/YOUR/icon"
+    },
+
+    {
+        dishName: "Coca-Cola", // excuse my french
+        mainCat: "Boissons",
+        subCat: "Soft",
+        description: "",
+        price: "2.50€", // €
+        icon: "./assets/images/YOUR/icon"
+    },
+
+    {
+        dishName: "Eau", // excuse my french
+        mainCat: "Boissons",
+        subCat: "Soft",
+        description: "Plate",
+        price: "2.50€", // €
+        icon: "./assets/images/YOUR/icon"
+    },
+    {
+        dishName: "Eau", // excuse my french
+        mainCat: "Boissons",
+        subCat: "Soft",
+        description: "Pétillante",
+        price: "2.50€", // €
+        icon: "./assets/images/YOUR/icon"
+    },
+
+    {
+        dishName: "Coca-Cola", // excuse my french
+        mainCat: "Boissons",
+        subCat: "Soft",
+        description: "Light",
+        price: "2.50€", // €
+        icon: "./assets/images/YOUR/icon"
+    },
+
+    {
+        dishName: "Coca-Cola", // excuse my french
+        mainCat: "Boissons",
+        subCat: "Soft",
+        description: "Zéro",
+        price: "2.50€", // €
+        icon: "./assets/images/YOUR/icon"
+    },
+
+    {
+        dishName: "Sprite", // excuse my french
+        mainCat: "Boissons",
+        subCat: "Soft",
+        description: "",
+        price: "2.50€", // €
+        icon: "./assets/images/YOUR/icon"
+    },
+
+    {
+        dishName: "Vin rouge", // excuse my french
+        mainCat: "Boissons",
+        subCat: "Alcools",
+        description: "Lambrusco",
+        price: "18€", // €
+        icon: "./assets/images/YOUR/icon"
+    },
+
+    {
+        dishName: "Vin blanc", // excuse my french
+        mainCat: "Boissons",
+        subCat: "Alcools",
+        description: "Pinot grigio",
+        price: "15€", // €
+        icon: "./assets/images/YOUR/icon"
+    },
+
+
+
+
+
+
 
 ];
 
