@@ -5,7 +5,7 @@ const italianDishes = [
         subCat: "Tomato",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur reiciendis blanditiis beatae placeat harum, deleniti laborum, corrupti aliquam temporibus architecto eveniet facere unde cum? Labore a sunt natus illum!",
         price: "10€", // €
-        Icon: "./assets/images/YOUR/ICON"
+        icon: "./assets/images/YOUR/icon"
     },
 
     {
@@ -14,7 +14,7 @@ const italianDishes = [
         subCat: "Tomato",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur reiciendis blanditiis beatae placeat harum, deleniti laborum, corrupti aliquam temporibus architecto eveniet facere unde cum? Labore a sunt natus illum!",
         price: "8.50€", // €
-        Icon: "./assets/images/YOUR/ICON"
+        icon: "./assets/images/YOUR/icon"
     },
 
     {
@@ -23,7 +23,7 @@ const italianDishes = [
         subCat: "Cream",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur reiciendis blanditiis beatae placeat harum, deleniti laborum, corrupti aliquam temporibus architecto eveniet facere unde cum? Labore a sunt natus illum!",
         price: "12€", // €
-        Icon: "./assets/images/YOUR/ICON"
+        icon: "./assets/images/YOUR/icon"
     },
 
     {
@@ -32,7 +32,7 @@ const italianDishes = [
         subCat: "Tomato",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur reiciendis blanditiis beatae placeat harum, deleniti laborum, corrupti aliquam temporibus architecto eveniet facere unde cum? Labore a sunt natus illum!",
         price: "7€", // €
-        Icon: "./assets/images/YOUR/ICON"
+        icon: "./assets/images/YOUR/icon"
     },
 
     {
@@ -41,7 +41,7 @@ const italianDishes = [
         subCat: "Cream",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur reiciendis blanditiis beatae placeat harum, deleniti laborum, corrupti aliquam temporibus architecto eveniet facere unde cum? Labore a sunt natus illum!",
         price: "13.50€", // €
-        Icon: "./assets/images/YOUR/ICON"
+        icon: "./assets/images/YOUR/icon"
     },
 
 ];
@@ -71,7 +71,7 @@ function generateCards() {
         // Create the picture
         let picture = document.createElement("img");
         picture.setAttribute("alt", dish.dishName);
-        picture.setAttribute("src", dish.Icon);
+        picture.setAttribute("src", dish.icon);
         picture.setAttribute("title", dish.dishName);
         article.appendChild(picture);
 
