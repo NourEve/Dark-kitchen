@@ -3,7 +3,7 @@ const italianDishes = [
         dishName: "Quatro Fromaggi",
         mainCat: "Pizza",
         subCat: "Tomato",
-        description: "Parmesan, gorgonzola, mozzarella et du provolone",
+        description: "Parmesan, gorgonzola, mozzarella and provolone",
         price: "10€", // €
         icon: "./assets/images/YOUR/icon"
     },
@@ -12,7 +12,7 @@ const italianDishes = [
         dishName: "Margherita",
         mainCat: "Pizza",
         subCat: "Tomato",
-        description: "tomates, mozzarella, basilic frais, sel et huile d'olive.",
+        description: "tomato, mozzarella, fresh basilic, salt and olive oil.",
         price: "8€", // €
         icon: "./assets/images/YOUR/icon"
     },
@@ -21,7 +21,7 @@ const italianDishes = [
         dishName: "Pepperoni",
         mainCat: "Pizza",
         subCat: "Cream",
-        description: "Tomate, mozzarella, salami piquant, oignons",
+        description: "Tomato, mozzarella, spicy salami, onions",
         price: "12€", // €
         icon: "./assets/images/YOUR/icon"
     },
@@ -30,7 +30,7 @@ const italianDishes = [
         dishName: "Napolitaine",
         mainCat: "Pizza",
         subCat: "Tomato",
-        description: "Tomates pelées, huile, ail, origan et sel.",
+        description: "Peeled tomato, oil, garlic, oregano and salt.",
         price: "7€", // €
         icon: "./assets/images/YOUR/icon"
     },
@@ -39,41 +39,41 @@ const italianDishes = [
         dishName: "Scampis", // excuse my french
         mainCat: "Pizza",
         subCat: "Cream",
-        description: "Mozzarella, scampis, feta, tomates, fenouil, origan, olives noires.",
+        description: "Mozzarella, scampis, feta cheese, tomato, fennel, oregano, black olives.",
         price: "13.50€", // €
         icon: "./assets/images/YOUR/icon"
     },
 
     {
-        dishName: "Jambon-Champignon", // excuse my french
+        dishName: "Ham-Mushroom", // excuse my french
         mainCat: "Pizza",
         subCat: "Calzone",
-        description: "Champignons, gruyère, origan, jambon, mozzarella, olives vertes, tomate.",
+        description: "Mushrooms, gruyère cheese, oregano, ham, mozzarella, green olives , tomato.",
         price: "14€", // €
         icon: "./assets/images/YOUR/icon"
     },
 
     {
-        dishName: "Tomate-Mozarrella", // excuse my french
+        dishName: "Tomato-Mozarrella", // excuse my french
         mainCat: "Pizza",
         subCat: "Calzone",
-        description: "Mozzarella, tomates, basilic.",
+        description: "Mozzarella, tomato, fresh basilic.",
         price: "12.50€", // €
         icon: "./assets/images/YOUR/icon"
     },
 
     {
         dishName: "Bolognèse", // excuse my french
-        mainCat: "Pâtes",
+        mainCat: "Pasta",
         subCat: "Spaghetti",
-        description: "Bœuf haché, sauce tomate, oignon, céleri, carottes, et huile d'olive.",
+        description: "Ground beef, tomato sauce, onions, celery, carots, and olive oil.",
         price: "10.50€", // €
         icon: "./assets/images/YOUR/icon"
     },
 
     {
-        dishName: "4 fromages", // excuse my french
-        mainCat: "Pâtes",
+        dishName: "4 Cheeses", // excuse my french
+        mainCat: "Pasta",
         subCat: "Penne",
         description: "Parmesan, gorgonzola, mozzarella, comté.",
         price: "11€", // €
@@ -83,18 +83,18 @@ const italianDishes = [
 
     {
         dishName: "Tartufa", // excuse my french
-        mainCat: "Pâtes",
+        mainCat: "Pasta",
         subCat: "Penne",
-        description: "Truffe noire, crème fraiche, basilic.",
+        description: " Black truffle, sour cream, fresh basilic.",
         price: "10.50€", // €
         icon: "./assets/images/YOUR/icon"
     },
 
     {
         dishName: "Vongole", // excuse my french
-        mainCat: "Pâtes",
+        mainCat: "Pasta",
         subCat: "Spaghetti",
-        description: "Palourdes, tomates cerises, vin blanc, ail, persil.",
+        description: "Clams, cherry tomatoes, white wine, garlic, parsley.",
         price: "13.50€", // €
         icon: "./assets/images/YOUR/icon"
     },
@@ -104,7 +104,7 @@ const italianDishes = [
         dishName: "Crème brulée", // excuse my french
         mainCat: "Desserts",
         subCat: "",
-        description: "Crème brulée du chef, à base de vanille et de caramel.",
+        description: "Chef's crème brulée, made of vanilla and caramel.",
         price: "6.50€", // €
         icon: "./assets/images/YOUR/icon"
     },
@@ -114,24 +114,24 @@ const italianDishes = [
         dishName: "Tiramisu", // excuse my french
         mainCat: "Desserts",
         subCat: "",
-        description: "Spécialité du chef, recette traditionnelle! ",
+        description: "The Chef'speciality , traditionnal recepe! ",
         price: "7€", // €
         icon: "./assets/images/YOUR/icon"
     },
 
 
     {
-        dishName: "Crumble aux pommes", // excuse my french
+        dishName: "Apple crumble", // excuse my french
         mainCat: "Desserts",
         subCat: "",
-        description: "Pour le plaisir des plus gourmands, une douceur sucrée ",
+        description: "For the pleasure of the greediest, a sweet sweetness. ",
         price: "7.50€", // €
         icon: "./assets/images/YOUR/icon"
     },
 
     {
         dishName: "Fanta", // excuse my french
-        mainCat: "Boissons",
+        mainCat: "Beverage",
         subCat: "Soft",
         description: "",
         price: "2.50€", // €
@@ -140,7 +140,7 @@ const italianDishes = [
 
     {
         dishName: "Coca-Cola", // excuse my french
-        mainCat: "Boissons",
+        mainCat: "Beverage",
         subCat: "Soft",
         description: "",
         price: "2.50€", // €
@@ -148,25 +148,25 @@ const italianDishes = [
     },
 
     {
-        dishName: "Eau", // excuse my french
-        mainCat: "Boissons",
+        dishName: "Water", // excuse my french
+        mainCat: "Beverage",
         subCat: "Soft",
-        description: "Plate",
+        description: "Still",
         price: "2.50€", // €
         icon: "./assets/images/YOUR/icon"
     },
     {
-        dishName: "Eau", // excuse my french
-        mainCat: "Boissons",
+        dishName: "Water", // excuse my french
+        mainCat: "Beverage",
         subCat: "Soft",
-        description: "Pétillante",
+        description: "Sparkling",
         price: "2.50€", // €
         icon: "./assets/images/YOUR/icon"
     },
 
     {
         dishName: "Coca-Cola", // excuse my french
-        mainCat: "Boissons",
+        mainCat: "Beverage",
         subCat: "Soft",
         description: "Light",
         price: "2.50€", // €
@@ -175,7 +175,7 @@ const italianDishes = [
 
     {
         dishName: "Coca-Cola", // excuse my french
-        mainCat: "Boissons",
+        mainCat: "Beverage",
         subCat: "Soft",
         description: "Zéro",
         price: "2.50€", // €
@@ -184,7 +184,7 @@ const italianDishes = [
 
     {
         dishName: "Sprite", // excuse my french
-        mainCat: "Boissons",
+        mainCat: "Beverage",
         subCat: "Soft",
         description: "",
         price: "2.50€", // €
@@ -192,18 +192,18 @@ const italianDishes = [
     },
 
     {
-        dishName: "Vin rouge", // excuse my french
-        mainCat: "Boissons",
-        subCat: "Alcools",
+        dishName: "Red wine", // excuse my french
+        mainCat: "Beverage",
+        subCat: "Alcohols",
         description: "Lambrusco",
         price: "18.50€", // €
         icon: "./assets/images/YOUR/icon"
     },
 
     {
-        dishName: "Vin blanc", // excuse my french
-        mainCat: "Boissons",
-        subCat: "Alcools",
+        dishName: "White wine", // excuse my french
+        mainCat: "Beverage",
+        subCat: "Alcohols",
         description: "Pinot grigio",
         price: "15€", // €
         icon: "./assets/images/YOUR/icon"
