@@ -1,10 +1,9 @@
 function darkMode() {
-    var switchMode = document.body;
-    switchMode.classList.toggle("dark");
+  document.body.classList.toggle("dark");
 }
 
-cardsMenu = document.getElementsByClassName("btn-dark"); // maybe change the class name
-navBar = document.querySelector("nav"); // maybe change the tag
-for (let displayCard of navBar) {
-    displayCard.addEventListener('click', darkMode);
+const btnSwitch = document.getElementsByClassName("colormode");
+console.log(btnSwitch); // maybe change the class name
+for (const btn of btnSwitch) {
+  btn.addEventListener("click", darkMode);
 }
