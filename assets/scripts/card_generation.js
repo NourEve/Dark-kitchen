@@ -99,6 +99,33 @@ const italianDishes = [
         icon: "./assets/images/pate-vongole.jpg"
     },
 
+    {
+        dishName: "Risotto with cuttlefish",
+        mainCat: "Other",
+        subCat: "",
+        description: "Rice, cuttlefish, white wine, shallots, parsley.",
+        price: "13.50€", // €
+        icon: "./assets/images/risotto.jpg"
+    },
+
+    {dishName: " Milanese Cutlets",
+    mainCat: "Other",
+    subCat: "",
+    description: "Cutlets, parmesan and pepper.",
+    price: "14.50€", // €
+    icon: "./assets/images/escalope.jpg"
+    },
+
+
+    {dishName: " Beef Spezzatino",
+    mainCat: "Other",
+    subCat: "",
+    description: "Braised beef, carotts, tomatoes, parsley, potatoes and celery.",
+    price: "15€", // €
+    icon: "./assets/images/beef.jpg"
+    },
+
+
 
     {
         dishName: "Crème brulée",
