@@ -1,0 +1,43 @@
+//Polices
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;700&display=swap');
+
+//Variables
+$clear : #FEF6EB;
+$blue : rgba(168, 183, 214, 0.5);
+$roseClear : #F6C8BB;
+$rose : rgba(224, 106, 124, 0.5);
+$red : #BF5555;
+
+
+//Mixins
+
+//Mise en page
+body {
+    background-color: $clear;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    &__fixe {
+        &__burger {
+            img {
+                width: 30vw;
+                height: auto;
+            }
+        }
+        &__logo {
+            background-image: url(../images/Logo-CasaNostra.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100vw;
+            height: 30vh;
+        }
+        &__panier {
+            img {
+                width: 30vw;
+                height: vh;
+            }
+        }
+    }
+}
