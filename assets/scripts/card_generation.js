@@ -147,7 +147,7 @@ const italianDishes = [
         icon: "./assets/Images/coca.jpg"
     },
 
-    
+
 
     {
         dishName: "Coca-Cola",
@@ -255,7 +255,7 @@ function generateCards() {
         // Create the sub category
         let subCat = document.createElement("h3");
         subCat.innerText = dish.subCat;
-        subCat.mainCatdishName = "subCat";
+        subCat.className = "subCat";
         subCat.setAttribute("title", dish.subCat);
         container.appendChild(subCat);
 
@@ -270,6 +270,12 @@ function generateCards() {
         price.innerText = dish.price;
         price.className = "price";
         container.appendChild(price);
+
+        // Create the "add" button
+        let addItem = document.createElement("img")
+        addItem.setAttribute("alt", "add");
+        addItem.setAttribute("src", "assets/images/icones/ajout-panier.png");
+        addItem.className("blablabla");
 
         section.appendChild(article);
         main.appendChild(section);
