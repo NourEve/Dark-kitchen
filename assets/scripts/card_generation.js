@@ -147,7 +147,7 @@ const italianDishes = [
         icon: "./assets/images/coca.jpg"
     },
 
-    
+
 
     {
         dishName: "Coca-Cola",
@@ -227,12 +227,6 @@ function generateCards() {
         title.innerText = dish.dishName;
         article.appendChild(title);
 
-        //Generate the flipped shadows text
-        // let flipped = document.createElement("h2");
-        // flipped.innerText = dish.dishName;
-        // flipped.mainCatdishName = "backwards";
-        // article.appendChild(flipped);
-
         // Create the picture
         let picture = document.createElement("img");
         picture.setAttribute("alt", dish.dishName);
@@ -255,7 +249,7 @@ function generateCards() {
         // Create the sub category
         let subCat = document.createElement("h3");
         subCat.innerText = dish.subCat;
-        subCat.mainCatdishName = "subCat";
+        subCat.className = "subCat";
         subCat.setAttribute("title", dish.subCat);
         container.appendChild(subCat);
 
@@ -270,6 +264,13 @@ function generateCards() {
         price.innerText = dish.price;
         price.className = "price";
         container.appendChild(price);
+
+        // Create the "add" button
+        let addItem = document.createElement("img")
+        addItem.setAttribute("alt", "add");
+        addItem.setAttribute("src", "assets/images/icones/ajout-panier.png");
+        addItem.className = "blablabla";
+        container.appendChild(addItem);
 
         section.appendChild(article);
         main.appendChild(section);
