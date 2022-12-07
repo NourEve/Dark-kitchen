@@ -275,7 +275,7 @@ function generateCards() {
         let addItem = document.createElement("img")
         addItem.setAttribute("alt", "add");
         addItem.setAttribute("src", "assets/images/icones/ajout-panier.png");
-        addItem.className("blablabla");
+        addItem.className = "blablabla";
 
         section.appendChild(article);
         main.appendChild(section);
