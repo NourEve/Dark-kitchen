@@ -135,7 +135,7 @@ const italianDishes = [
         subCat: "Soft",
         description: "",
         price: "2.50€", // €
-        icon: "./assets/Images/Fanta.jpg"
+        icon: "./assets/images/Fanta.jpg"
     },
 
     {
@@ -144,7 +144,7 @@ const italianDishes = [
         subCat: "Soft",
         description: "",
         price: "2.50€", // €
-        icon: "./assets/Images/coca.jpg"
+        icon: "./assets/images/coca.jpg"
     },
 
     
@@ -155,7 +155,7 @@ const italianDishes = [
         subCat: "Soft",
         description: "Light",
         price: "2.50€", // €
-        icon: "./assets/Images/coca-light.jpg"
+        icon: "./assets/images/coca-light.jpg"
     },
 
     {
@@ -164,7 +164,7 @@ const italianDishes = [
         subCat: "Soft",
         description: "Zéro",
         price: "2.50€", // €
-        icon: "./assets/Images/coca-zero.jpg"
+        icon: "./assets/images/coca-zero.jpg"
     },
 
     {
@@ -173,7 +173,7 @@ const italianDishes = [
         subCat: "Soft",
         description: "Still",
         price: "2.50€", // €
-        icon: "./assets/Images/eau-plate.jpg"
+        icon: "./assets/images/eau-plate.jpg"
     },
 
     {
@@ -182,7 +182,7 @@ const italianDishes = [
         subCat: "Soft",
         description: "Sparkling",
         price: "2.50€", // €
-        icon: "./assets/Images/eau-pet.jpg"
+        icon: "./assets/images/eau-pet.jpg"
     },
 
     {
@@ -191,7 +191,7 @@ const italianDishes = [
         subCat: "Soft",
         description: "",
         price: "2.50€", // €
-        icon: "./assets/Images/sprite.jpg"
+        icon: "./assets/images/sprite.jpg"
     },
 
     {
@@ -200,7 +200,7 @@ const italianDishes = [
         subCat: "Alcohols",
         description: "Lambrusco",
         price: "18.50€", // €
-        icon: "./assets/Images/vin-rouge.jpg"
+        icon: "./assets/images/vin-rouge.jpg"
     },
 
     {
@@ -209,7 +209,7 @@ const italianDishes = [
         subCat: "Alcohols",
         description: "Pinot grigio",
         price: "15€", // €
-        icon: "./assets/Images/vin-blanc.jpg"
+        icon: "./assets/images/vin-blanc.jpg"
     }
 ]
 
