@@ -216,15 +216,17 @@ const italianDishes = [
 function generateCards() {
     let main = document.getElementsByTagName("main")[0];
     let section = document.createElement("section");
+    section.className = "main__section";
 
     for (let dish of italianDishes) {
         // Create the article
         let article = document.createElement("article");
-        article.className = dish.mainCat + " " + dish.subCat;
+        article.className = dish.mainCat + " " + dish.subCat + "main__section__article article"
 
         // Create the title (dish name)
         let title = document.createElement("h2");
         title.innerText = dish.dishName;
+        title.className = "article__name";
         article.appendChild(title);
 
         // Create the picture
@@ -232,44 +234,45 @@ function generateCards() {
         picture.setAttribute("alt", dish.dishName);
         picture.setAttribute("src", dish.icon);
         picture.setAttribute("title", dish.dishName);
+        picture.className = "article__img";
         article.appendChild(picture);
 
         // create the container for the following infos
         let container = document.createElement("div");
-        container.className = "container";
+        container.className = "article__container";
         article.appendChild(container);
 
         // Create the dish main category
         let dishmainCat = document.createElement("h3");
         dishmainCat.innerText = dish.mainCat;
-        dishmainCat.className = "mainCat";
+        dishmainCat.className = "article__container__mainCat";
         dishmainCat.setAttribute("title", "mainCat");
         container.appendChild(dishmainCat);
 
         // Create the sub category
         let subCat = document.createElement("h3");
         subCat.innerText = dish.subCat;
-        subCat.className = "subCat";
+        subCat.className = "article__container__subCat";
         subCat.setAttribute("title", dish.subCat);
         container.appendChild(subCat);
 
         // Create the description pin
-        let description = document.createElement("p")
+        let description = document.createElement("p");
         description.innerText = dish.description;
-        description.className = "description";
+        description.className = "article__container__description";
         container.appendChild(description);
 
         // Create the price pin
         let price = document.createElement("h3")
         price.innerText = dish.price;
-        price.className = "price";
+        price.className = "article__container__price";
         container.appendChild(price);
 
         // Create the "add" button
         let addItem = document.createElement("img")
         addItem.setAttribute("alt", "add");
         addItem.setAttribute("src", "assets/images/icones/ajout-panier.png");
-        addItem.className = "blablabla";
+        addItem.className = "article__addButton";
         container.appendChild(addItem);
 
         section.appendChild(article);
