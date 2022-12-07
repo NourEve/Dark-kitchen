@@ -227,12 +227,6 @@ function generateCards() {
         title.innerText = dish.dishName;
         article.appendChild(title);
 
-        //Generate the flipped shadows text
-        // let flipped = document.createElement("h2");
-        // flipped.innerText = dish.dishName;
-        // flipped.mainCatdishName = "backwards";
-        // article.appendChild(flipped);
-
         // Create the picture
         let picture = document.createElement("img");
         picture.setAttribute("alt", dish.dishName);
