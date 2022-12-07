@@ -132,6 +132,7 @@ const italianDishes = [
     {
         dishName: "Fanta",
         mainCat: "Beverage",
+        picture: "./assets/Images/Fanta.jpg",
         subCat: "Soft",
         description: "",
         price: "2.50€", // €
@@ -141,32 +142,19 @@ const italianDishes = [
     {
         dishName: "Coca-Cola",
         mainCat: "Beverage",
+        picture: "./assets/Images/coca.jpg",
         subCat: "Soft",
         description: "",
         price: "2.50€", // €
         icon: "./assets/images/boissons-soft.jpeg"
     },
 
-    {
-        dishName: "Water",
-        mainCat: "Beverage",
-        subCat: "Soft",
-        description: "Still",
-        price: "2.50€", // €
-        icon: "./assets/images/boissons-soft.jpeg"
-    },
-    {
-        dishName: "Water",
-        mainCat: "Beverage",
-        subCat: "Soft",
-        description: "Sparkling",
-        price: "2.50€", // €
-        icon: "./assets/images/boissons-soft.jpeg"
-    },
+    
 
     {
         dishName: "Coca-Cola",
         mainCat: "Beverage",
+        picture:"./assets/Images/coca-light.jpg",
         subCat: "Soft",
         description: "Light",
         price: "2.50€", // €
@@ -176,6 +164,7 @@ const italianDishes = [
     {
         dishName: "Coca-Cola",
         mainCat: "Beverage",
+        picture:"./assets/Images/coca-zero.jpg",
         subCat: "Soft",
         description: "Zéro",
         price: "2.50€", // €
@@ -183,8 +172,29 @@ const italianDishes = [
     },
 
     {
+        dishName: "Water",
+        mainCat: "Beverage",
+        picture:"./assets/Images/eau-plate.jpg",
+        subCat: "Soft",
+        description: "Still",
+        price: "2.50€", // €
+        icon: "./assets/images/boissons-soft.jpeg"
+    },
+
+    {
+        dishName: "Water",
+        mainCat: "Beverage",
+        picture:"./assets/Images/eau-pet.jpg",
+        subCat: "Soft",
+        description: "Sparkling",
+        price: "2.50€", // €
+        icon: "./assets/images/boissons-soft.jpeg"
+    },
+
+    {
         dishName: "Sprite",
         mainCat: "Beverage",
+        picture:"./assets/Images/sprite.jpg",
         subCat: "Soft",
         description: "",
         price: "2.50€", // €
@@ -194,6 +204,7 @@ const italianDishes = [
     {
         dishName: "Red wine",
         mainCat: "Beverage",
+        picture:"./assets/Images/vin-rouge.jpg",
         subCat: "Alcohols",
         description: "Lambrusco",
         price: "18.50€", // €
@@ -203,6 +214,7 @@ const italianDishes = [
     {
         dishName: "White wine",
         mainCat: "Beverage",
+        picture:"./assets/Images/vin-blanc.jpg",
         subCat: "Alcohols",
         description: "Pinot grigio",
         price: "15€", // €
