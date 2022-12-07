@@ -12,31 +12,92 @@
 
     <script src="./assets/scripts/card_generation.js" defer></script>
     <script src="./assets/scripts/dark_mode.js" defer></script>
+    <script src="./assets/scripts/shop.js" async></script>
+
     <title>Casanostra - Turn off the oven, delivery is much faster!</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="./assets/images/Logo-CasaNostra.png" alt="" />
+    <header class="header">
+      <div class="header__fixe">
+        <div class="header__fixe__burger">
+          <img src="./assets/images/icones/menu.png" alt="" />
+        </div>
+        <div class="header__fixe__logo">
+          <img src="./assets/images/Logo-CasaNostra.png" alt="" />
+        </div>
+        <div class="header__fixe__panier">
+          <img src="./assets/images/icones/panier.png" alt="" />
+        </div>
+      </div>
+
+      <div class="header__menu">
+        <h1>Hi!</h1>
+        <nav class="header__nav">
+          <div class="header__nav__card header__card--bleu">
+            <img src="assets/images/icones/pizza (1).png" alt="" />
+            <p>Pizza</p>
+          </div>
+          <div class="header__nav__card header__card--rose">
+            <img src="assets/images/icones/pates.png" alt="" />
+            <p>Pasta</p>
+          </div>
+          <div class="header__nav__card header__card--bleu">
+            <img src="assets/images/icones/feijoada.png" alt="" />
+            <p>Other</p>
+          </div>
+          <div class="header__nav__card header__card--rose">
+            <img src="assets/images/icones/boisson-alcoolisee (2).png" alt="" />
+            <p>Drinks</p>
+          </div>
+          <div class="header__nav__card header__card--bleu">
+            <img src="assets/images/gateau.png" alt="" />
+            <p>Desserts</p>
+          </div>
+          <div class="header__nav__card header__card--rose">
+            <img src="assets/images/icones/liste.png" alt="" />
+            <p>All</p>
+          </div>
+        </nav>
+      </div>
+
+      <div class="header__colormode">
+        <div class="header__colormode__moon header__colormode--style">
+          <img src="./assets/images/icones/moon.png" alt="" />
+        </div>
+        <div class="header__colormode__sun header__colormode--style">
+          <img src="./assets/images/icones/sun.png" alt="" />
+        </div>
       </div>
     </header>
-    <main>
+    <main class="main">
       <!-- Dynamically display cards here -->
+      <h2 class="main__choose">Select your product</h2>
     </main>
+    <!-- TEST PURPOSES ONLY -->
+    <div class="order_test">
+      <!-- here lies the placeholder button while there is no "-" image to actually remove items from the cart -->
 
-    <!-- displaying a dumb black square for testing purposes -->
-    <div
-      class="colormode"
-      style="background-color: black; width: 50px; height: 50px"
-    ></div>
+      <div class="cart-items">
+        <div class="cart-row">
+          <div
+            class="cart-column"
+            style="background-color: black; width: 50px; height: 50px"
+          >
+            <span class="cart-item-title">Test square</span>
+          </div>
+          <div class="quantity">
+            <input class="cart-quantity-input" type="number" value="1" />
+            <button class="removeItem" type="button">REMOVE</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer>
-      <h4>Copyright BeCode 2022 - All rights reserved</h4>
+      <h4>Copyright BeCode 2022 - Keller 5 - Group 2 - All rights reserved</h4>
       <ul>
         <li><a href="#">Privacy</a></li>
         <li><a href="#">Terms of use</a></li>
         <li><a href="#">About us</a></li>
-        <li><a href="#">...</a></li>
-        <li><a href="#">...</a></li>
       </ul>
     </footer>
   </body>
