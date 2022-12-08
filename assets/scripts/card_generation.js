@@ -256,14 +256,6 @@ function generateCards() {
         title.className = "article__name";
         article.appendChild(title);
 
-        // Create the picture
-        let picture = document.createElement("img");
-        picture.setAttribute("alt", dish.dishName);
-        picture.setAttribute("src", dish.icon);
-        picture.setAttribute("title", dish.dishName);
-        picture.className = "article__img";
-        article.appendChild(picture);
-
         // create the container for the following infos
         let container = document.createElement("div");
         container.className = "article__container";
@@ -294,6 +286,14 @@ function generateCards() {
         price.innerText = dish.price;
         price.className = "article__container__price";
         container.appendChild(price);
+
+        // Create the picture
+        let picture = document.createElement("img");
+        picture.setAttribute("alt", dish.dishName);
+        picture.setAttribute("src", dish.icon);
+        picture.setAttribute("title", dish.dishName);
+        picture.className = "article__img";
+        article.appendChild(picture);
 
         // Create the "add" button
         let addItem = document.createElement("img")

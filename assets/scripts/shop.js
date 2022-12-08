@@ -44,11 +44,31 @@ function quantityChanged(event) {
 
 function addToCartClicked(event) {
     var plus = event.target;
-    var shopItem = plus.parentElement;
-    console.log(shopItem)
+    var shopItem = plus.parentElement.parentElement;
+    var title = shopItem.getElementsByClassName("article__name")[0].innerText;
+    var price = shopItem.getElementsByClassName("article__container__price")[0].innerText;
+    var imageSrc = shopItem.getElementsByClassName("article__img")[0].src;
+    console.log(title, price, imageSrc)
+    addItemToCart(title, price, imageSrc)
 }
 
-add
+function addItemToCart(title, price, imageSrc) {
+    var cartRow = document.createElement('div');
+    cartRow.classList.add('cart-row')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    var cartRowContents = `<div class="cart-item cart-column">
+    <img class="cart-item-image" src="${imageSrc}"
+    <span class="cart-item-title" style="color: white" ;>${title}</span>
+  </div>
+  <span class="cart-price cart-column">${price}</span>
+  <div class="cart-quantity cart-column">
+    <input class="cart-quantity-input" type="number" value="1" />
+    <button class="removeItem" type="button">REMOVE</button>
+  </div>`
+  cartRow.innerHTML = cartRowContents
+    cartItems.append(cartRow)
+
+}
 
 function updateTotal() {
     var cartItemContainer = document.getElementsByClassName("cart-items")[0]
