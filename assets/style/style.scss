@@ -110,8 +110,7 @@ body {
         @extend .header__menu;
         flex-direction: row;
         justify-content: space-evenly;
-        margin-left: -26%;
-        padding-right: 16%;
+        margin-left: -43%;
         padding-top: 5%;
         padding-bottom: 5%;
         &__moon {
@@ -135,19 +134,35 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
 .article {
-    border: 3px solid black;
+    border-radius: 5vw;
     display: flex;
     flex-direction: column;
+    align-items: end;
     width: 40%;
+    margin: 5% 3% 5% 3%;
+    background-color: $roseClear;
     &__img {
         width: 50%;
     }
     &__addButton {
         width: 10%;
+    }
+    &__name {
+        @include fonts(4.4vw, 400)
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: $red;
+        &__mainCat {
+            display: none;
+        }
     }
 }
 
@@ -155,24 +170,33 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 10%;
+    align-content: center;
+    align-items: center;
     background-color: $blue;
-   
     bottom: 0;
     width: 100%;
     margin: auto;
     margin-bottom: -5vw;
 
     &__h4{
-        @include fonts(4vw, 400)
+        @include fonts(4vw, 400);
+        width: 75%;
+        text-align: center
+        
     }
     &__ul{
+        @include fonts(3.5vw, 400);
         list-style-type: none;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-content: center;
         align-items: center;
+        gap: 5vw;
+        margin-right: 10vw;
     }
+
 }
 
 
