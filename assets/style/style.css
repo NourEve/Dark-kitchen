@@ -2,12 +2,8 @@
 body {
   background-color: #FEF6EB;
   width: 100%;
-}
-
-html {
   margin: 0;
   padding: 0;
-  list-style-type: none;
 }
 
 .header__fixe {
