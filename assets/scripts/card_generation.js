@@ -248,7 +248,7 @@ function generateCards() {
     for (let dish of italianDishes) {
         // Create the article
         let article = document.createElement("article");
-        article.className = dish.mainCat + " " + dish.subCat + "main__section__article article"
+        article.className = dish.mainCat + " " + dish.subCat + " main__section__article article"
 
         // Create the title (dish name)
         let title = document.createElement("h2");
