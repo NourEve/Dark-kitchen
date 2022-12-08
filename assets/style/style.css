@@ -48,6 +48,8 @@ html {
   margin-left: -10%;
   margin-top: -5%;
   transform: translateX(-100%);
+  overflow: hidden;
+  max-height: 0;
 }
 .header__menu__h1 {
   margin-top: 55%;
@@ -97,5 +99,53 @@ html {
 }
 
 .main {
-  display: none;
+  padding-top: 25%;
+}
+.main__choose {
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 6vw;
+  font-weight: 700;
+}
+.main__section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.article {
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.article__img {
+  width: 50%;
+}
+.article__addButton {
+  width: 10%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(168, 183, 214, 0.5);
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  margin-bottom: -5vw;
+}
+.footer__h4 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 4vw;
+  font-weight: 400;
+}
+.footer__ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
