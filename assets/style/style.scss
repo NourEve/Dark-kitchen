@@ -73,8 +73,8 @@ html {
         margin-left: -10%;
         margin-top: -5%;
         transform: translateX(-100%);
-        //overflow: hidden;
-        //max-width: 0%;
+        overflow: hidden;
+        max-height: 0;
         &__h1{
             margin-top: 55%;
             @include fonts(14vw, 400);
@@ -128,7 +128,29 @@ html {
 }
 
 .main {
-    display: none;
+    padding-top: 25%;
+    &__choose {
+        text-align: center;
+        @include fonts(6vw, 700);
+    }
+    &__section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.article {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    &__img {
+        width: 50%;
+    }
+    &__addButton {
+        width: 10%;
+    }
 }
 
 .footer{ 
