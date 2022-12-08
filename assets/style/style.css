@@ -37,7 +37,7 @@ html {
   position: relative;
   right: 0;
 }
-.header__menu {
+.header__menu, .header__colormode {
   display: flex;
   flex-direction: column;
   padding-left: 36%;
@@ -47,6 +47,7 @@ html {
   width: 50%;
   margin-left: -10%;
   margin-top: -5%;
+  transform: translateX(-100%);
 }
 .header__menu__h1 {
   margin-top: 55%;
@@ -81,6 +82,14 @@ html {
   color: #BF5555;
   width: 150%;
   margin-left: -25%;
+}
+.header__colormode {
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: -26%;
+  padding-right: 16%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .header__colormode--style {
   width: 10vw;
