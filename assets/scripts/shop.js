@@ -56,7 +56,8 @@ function addItemToCart(title, price, imageSrc) {
     var cartRow = document.createElement('div');
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
-    var cartRowContents = `<div class="cart-item cart-column">
+    var cartRowContents = `<div class="cart-row">
+    <div class="cart-item cart-column">
     <img class="cart-item-image" src="${imageSrc}"
     <span class="cart-item-title" style="color: white" ;>${title}</span>
   </div>
@@ -64,6 +65,7 @@ function addItemToCart(title, price, imageSrc) {
   <div class="cart-quantity cart-column">
     <input class="cart-quantity-input" type="number" value="1" />
     <button class="removeItem" type="button">REMOVE</button>
+  </div>
   </div>`
   cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
