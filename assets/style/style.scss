@@ -131,4 +131,28 @@ html {
     display: none;
 }
 
+.footer{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $blue;
+   
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    margin-bottom: -5vw;
+
+    &__h4{
+        @include fonts(4vw, 400)
+    }
+    &__ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+    }
+}
+
 
