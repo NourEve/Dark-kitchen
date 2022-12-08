@@ -99,6 +99,33 @@ const italianDishes = [
         icon: "./assets/images/pate-vongole.jpg"
     },
 
+    {
+        dishName: "Risotto with cuttlefish",
+        mainCat: "Other",
+        subCat: "",
+        description: "Rice, cuttlefish, white wine, shallots, parsley.",
+        price: "13.50€", // €
+        icon: "./assets/images/risotto.jpg"
+    },
+
+    {dishName: " Milanese Cutlets",
+    mainCat: "Other",
+    subCat: "",
+    description: "Cutlets, parmesan and pepper.",
+    price: "14.50€", // €
+    icon: "./assets/images/escalope.jpg"
+    },
+
+
+    {dishName: " Beef Spezzatino",
+    mainCat: "Other",
+    subCat: "",
+    description: "Braised beef, carotts, tomatoes, parsley, potatoes and celery.",
+    price: "15€", // €
+    icon: "./assets/images/beef.jpg"
+    },
+
+
 
     {
         dishName: "Crème brulée",
@@ -135,7 +162,7 @@ const italianDishes = [
         subCat: "Soft",
         description: "",
         price: "2.50€", // €
-        icon: "./assets/images/boissons-soft.jpeg"
+        icon: "./assets/images/Fanta.jpg"
     },
 
     {
@@ -144,25 +171,10 @@ const italianDishes = [
         subCat: "Soft",
         description: "",
         price: "2.50€", // €
-        icon: "./assets/images/boissons-soft.jpeg"
+        icon: "./assets/images/coca.jpg"
     },
 
-    {
-        dishName: "Water",
-        mainCat: "Beverage",
-        subCat: "Soft",
-        description: "Still",
-        price: "2.50€", // €
-        icon: "./assets/images/boissons-soft.jpeg"
-    },
-    {
-        dishName: "Water",
-        mainCat: "Beverage",
-        subCat: "Soft",
-        description: "Sparkling",
-        price: "2.50€", // €
-        icon: "./assets/images/boissons-soft.jpeg"
-    },
+
 
     {
         dishName: "Coca-Cola",
@@ -170,7 +182,7 @@ const italianDishes = [
         subCat: "Soft",
         description: "Light",
         price: "2.50€", // €
-        icon: "./assets/images/boissons-soft.jpeg"
+        icon: "./assets/images/coca-light.jpg"
     },
 
     {
@@ -179,7 +191,25 @@ const italianDishes = [
         subCat: "Soft",
         description: "Zéro",
         price: "2.50€", // €
-        icon: "./assets/images/boissons-soft.jpeg"
+        icon: "./assets/images/coca-zero.jpg"
+    },
+
+    {
+        dishName: "Water",
+        mainCat: "Beverage",
+        subCat: "Soft",
+        description: "Still",
+        price: "2.50€", // €
+        icon: "./assets/images/eau-plate.jpg"
+    },
+
+    {
+        dishName: "Water",
+        mainCat: "Beverage",
+        subCat: "Soft",
+        description: "Sparkling",
+        price: "2.50€", // €
+        icon: "./assets/images/eau-pet.jpg"
     },
 
     {
@@ -188,7 +218,7 @@ const italianDishes = [
         subCat: "Soft",
         description: "",
         price: "2.50€", // €
-        icon: "./assets/images/boissons-soft.jpeg"
+        icon: "./assets/images/sprite.jpg"
     },
 
     {
@@ -197,7 +227,7 @@ const italianDishes = [
         subCat: "Alcohols",
         description: "Lambrusco",
         price: "18.50€", // €
-        icon: "./assets/images/vins.jpeg"
+        icon: "./assets/images/vin-rouge.jpg"
     },
 
     {
@@ -206,67 +236,71 @@ const italianDishes = [
         subCat: "Alcohols",
         description: "Pinot grigio",
         price: "15€", // €
-        icon: "./assets/images/vins.jpeg"
+        icon: "./assets/images/vin-blanc.jpg"
     }
 ]
 
 function generateCards() {
     let main = document.getElementsByTagName("main")[0];
     let section = document.createElement("section");
+    section.className = "main__section";
 
     for (let dish of italianDishes) {
         // Create the article
         let article = document.createElement("article");
-        article.className = dish.mainCat + " " + dish.subCat;
+        article.className = dish.mainCat + " " + dish.subCat + "main__section__article article"
 
         // Create the title (dish name)
         let title = document.createElement("h2");
         title.innerText = dish.dishName;
+        title.className = "article__name";
         article.appendChild(title);
-
-        //Generate the flipped shadows text
-        // let flipped = document.createElement("h2");
-        // flipped.innerText = dish.dishName;
-        // flipped.mainCatdishName = "backwards";
-        // article.appendChild(flipped);
 
         // Create the picture
         let picture = document.createElement("img");
         picture.setAttribute("alt", dish.dishName);
         picture.setAttribute("src", dish.icon);
         picture.setAttribute("title", dish.dishName);
+        picture.className = "article__img";
         article.appendChild(picture);
 
         // create the container for the following infos
         let container = document.createElement("div");
-        container.className = "container";
+        container.className = "article__container";
         article.appendChild(container);
 
         // Create the dish main category
         let dishmainCat = document.createElement("h3");
         dishmainCat.innerText = dish.mainCat;
-        dishmainCat.className = "mainCat";
+        dishmainCat.className = "article__container__mainCat";
         dishmainCat.setAttribute("title", "mainCat");
         container.appendChild(dishmainCat);
 
         // Create the sub category
         let subCat = document.createElement("h3");
         subCat.innerText = dish.subCat;
-        subCat.mainCatdishName = "subCat";
+        subCat.className = "article__container__subCat";
         subCat.setAttribute("title", dish.subCat);
         container.appendChild(subCat);
 
         // Create the description pin
-        let description = document.createElement("p")
+        let description = document.createElement("p");
         description.innerText = dish.description;
-        description.className = "description";
+        description.className = "article__container__description";
         container.appendChild(description);
 
         // Create the price pin
         let price = document.createElement("h3")
         price.innerText = dish.price;
-        price.className = "price";
+        price.className = "article__container__price";
         container.appendChild(price);
+
+        // Create the "add" button
+        let addItem = document.createElement("img")
+        addItem.setAttribute("alt", "add");
+        addItem.setAttribute("src", "assets/images/icones/ajout-panier.png");
+        addItem.className = "article__addButton";
+        container.appendChild(addItem);
 
         section.appendChild(article);
         main.appendChild(section);
