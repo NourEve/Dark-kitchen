@@ -287,20 +287,25 @@ function generateCards() {
         price.className = "article__container__price";
         container.appendChild(price);
 
+        // Create a div for the picture
+        let divPicture = document.createElement('div')
+        divPicture.className = "article__img"
+        article.appendChild(divPicture)
+        
         // Create the picture
         let picture = document.createElement("img");
         picture.setAttribute("alt", dish.dishName);
         picture.setAttribute("src", dish.icon);
         picture.setAttribute("title", dish.dishName);
-        picture.className = "article__img";
-        article.appendChild(picture);
+        picture.className = "article__img__bg";
+        divPicture.appendChild(picture);
 
         // Create the "add" button
         let addItem = document.createElement("img")
         addItem.setAttribute("alt", "add");
         addItem.setAttribute("src", "assets/images/icones/ajout-panier.png");
         addItem.className = "article__addButton";
-        container.appendChild(addItem);
+        divPicture.appendChild(addItem);
 
         section.appendChild(article);
         main.appendChild(section);
