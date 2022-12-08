@@ -19,6 +19,12 @@ function ready() {
         var input = quantityInputs[i]
         input.addEventListener('change', quantityChanged)
     }
+
+    var addToCart = document.getElementsByClassName("article__addButton")
+    for (var i = 0; i < addToCart.length; i++) {
+        var plus = addToCart[i];
+        plus.addEventListener('click', addToCartClicked)
+    }
 }
 
 function removeCartItem(event) {
@@ -28,13 +34,21 @@ function removeCartItem(event) {
 }
 
 function quantityChanged(event) {
-    var input = event.target; 
+    var input = event.target;
 
     if (isNaN(input.value) || input.value <= 0) {
         input.value = 1;
     }
     updateTotal()
 }
+
+function addToCartClicked(event) {
+    var plus = event.target;
+    var shopItem = plus.parentElement;
+    console.log(shopItem)
+}
+
+add
 
 function updateTotal() {
     var cartItemContainer = document.getElementsByClassName("cart-items")[0]
