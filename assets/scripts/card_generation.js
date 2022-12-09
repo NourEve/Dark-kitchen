@@ -5,7 +5,7 @@ const italianDishes = [
         subCat: "Tomato",
         description: "Parmesan, gorgonzola, mozzarella and provolone",
         price: "10€", // €
-        icon: "./assets/images/4fromages.png"
+        icon: "./assets/images/4fromages.webp"
     },
 
     {
@@ -14,7 +14,7 @@ const italianDishes = [
         subCat: "Tomato",
         description: "tomato, mozzarella, fresh basilic, salt and olive oil.",
         price: "8€", // €
-        icon: "./assets/images/margarita.png"
+        icon: "./assets/images/margarita.webp"
     },
 
     {
@@ -23,7 +23,7 @@ const italianDishes = [
         subCat: "Cream",
         description: "Tomato, mozzarella, spicy salami, onions",
         price: "12€", // €
-        icon: "./assets/images/peperroni.png"
+        icon: "./assets/images/peperroni.webp"
     },
 
     {
@@ -32,7 +32,7 @@ const italianDishes = [
         subCat: "Tomato",
         description: "A réécrire ",
         price: "7€", // €
-        icon: "./assets/images/hawaii.png"
+        icon: "./assets/images/hawaii.webp"
     },
 
     {
@@ -41,7 +41,7 @@ const italianDishes = [
         subCat: "Cream",
         description: "Mozzarella, scampis, feta cheese, tomato, fennel, oregano, black olives.",
         price: "13.50€", // €
-        icon: "./assets/images/creme-scampi.png"
+        icon: "./assets/images/creme-scampi.webp"
     },
 
     {
@@ -50,7 +50,7 @@ const italianDishes = [
         subCat: "Calzone",
         description: "Mushrooms, gruyère cheese, oregano, ham, mozzarella, green olives , tomato.",
         price: "14€", // €
-        icon: "./assets/images/ham-mushroom.png"
+        icon: "./assets/images/ham-mushroom.webp"
     },
 
     {
@@ -59,7 +59,7 @@ const italianDishes = [
         subCat: "Calzone",
         description: "Mozzarella, tomato, fresh basilic.",
         price: "12.50€", // €
-        icon: "./assets/images/mozzarella-tomato.png"
+        icon: "./assets/images/mozzarella-tomato.webp"
     },
 
     {
@@ -68,7 +68,7 @@ const italianDishes = [
         subCat: "Spaghetti",
         description: "Ground beef, tomato sauce, onions, celery, carots, and olive oil.",
         price: "10.50€", // €
-        icon: "./assets/images/bolognèse.png"
+        icon: "./assets/images/bolognèse.webp"
     },
 
     {
@@ -77,7 +77,7 @@ const italianDishes = [
         subCat: "Tagliatelle",
         description: "Parmesan, gorgonzola, mozzarella, comté.",
         price: "11€", // €
-        icon: "assets/images/tagliatelle.png"
+        icon: "assets/images/tagliatelle.webp"
     },
 
 
@@ -87,7 +87,7 @@ const italianDishes = [
         subCat: "Farfale",
         description: "Black truffle, sour cream, fresh basilic.",
         price: "10.50€", // €
-        icon: "./assets/images/farfale-truffes.png"
+        icon: "./assets/images/farfale-truffes.webp"
     },
 
     {
@@ -96,7 +96,7 @@ const italianDishes = [
         subCat: "Spaghetti",
         description: "à modifier",
         price: "13.50€", // €
-        icon: "assets/images/spaghetti-scampi.png"
+        icon: "assets/images/spaghetti-scampi.webp"
     },
 
     {
@@ -105,7 +105,7 @@ const italianDishes = [
         subCat: "",
         description: "Rice, cuttlefish, white wine, shallots, parsley.",
         price: "13.50€", // €
-        icon: "assets/images/risotto.png"
+        icon: "assets/images/risotto.webp"
     },
 
     {dishName: " Lasagne",
@@ -113,7 +113,7 @@ const italianDishes = [
     subCat: "",
     description: "à modifier",
     price: "14.50€", // €
-    icon: "assets/images/lasagne.png"
+    icon: "assets/images/lasagne.webp"
     },
 
 
@@ -122,7 +122,7 @@ const italianDishes = [
     subCat: "",
     description: "à modifier",
     price: "15€", // €
-    icon: "assets/images/ossobuco.png"
+    icon: "assets/images/ossobuco.webp"
     },
 
 
@@ -133,7 +133,7 @@ const italianDishes = [
         subCat: "",
         description: "Chef's crème brulée, made of vanilla and caramel.",
         price: "6.50€", // €
-        icon: "assets/images/crème brulée.png"
+        icon: "assets/images/crème brulée.webp"
     },
 
 
@@ -143,7 +143,7 @@ const italianDishes = [
         subCat: "",
         description: "The Chef'speciality , traditionnal recepe! ",
         price: "7€", // €
-        icon: "assets/images/tiramisu.png"
+        icon: "assets/images/tiramisu.webp"
     },
 
 
@@ -153,7 +153,7 @@ const italianDishes = [
         subCat: "",
         description: "For the pleasure of the greediest, a sweet sweetness.",
         price: "7.50€", // €
-        icon: "assets/images/crumble.png"
+        icon: "assets/images/crumble.webp"
     },
 
     {
@@ -162,7 +162,7 @@ const italianDishes = [
         subCat: "Soft",
         description: "",
         price: "2.50€", // €
-        icon: "assets/images/fanta.png"
+        icon: "assets/images/fanta.webp"
     },
 
     {
@@ -171,7 +171,7 @@ const italianDishes = [
         subCat: "Soft",
         description: "",
         price: "2.50€", // €
-        icon: "assets/images/coca.png"
+        icon: "assets/images/coca.webp"
     },
 
 
@@ -182,7 +182,7 @@ const italianDishes = [
         subCat: "Soft",
         description: "Light",
         price: "2.50€", // €
-        icon: "assets/images/coca.png"
+        icon: "assets/images/coca.webp"
     },
 
     {
@@ -191,7 +191,7 @@ const italianDishes = [
         subCat: "Soft",
         description: "Zéro",
         price: "2.50€", // €
-        icon: "assets/images/coca.png"
+        icon: "assets/images/coca.webp"
     },
 
     {
@@ -200,7 +200,7 @@ const italianDishes = [
         subCat: "Soft",
         description: "Still",
         price: "2.50€", // €
-        icon: "assets/images/water.png"
+        icon: "assets/images/water.webp"
     },
 
     {
@@ -209,7 +209,7 @@ const italianDishes = [
         subCat: "Soft",
         description: "Sparkling",
         price: "2.50€", // €
-        icon: "assets/images/water.png"
+        icon: "assets/images/water.webp"
     },
 
     {
@@ -218,7 +218,7 @@ const italianDishes = [
         subCat: "Soft",
         description: "",
         price: "2.50€", // €
-        icon: "assets/images/sprite.png"
+        icon: "assets/images/sprite.webp"
     },
 
     {
@@ -227,7 +227,7 @@ const italianDishes = [
         subCat: "Alcohols",
         description: "Lambrusco",
         price: "18.50€", // €
-        icon: "assets/images/red-wine.png"
+        icon: "assets/images/red-wine.webp"
     },
 
     {
@@ -236,7 +236,7 @@ const italianDishes = [
         subCat: "Alcohols",
         description: "Pinot grigio",
         price: "15€", // €
-        icon: "assets/images/white-wine.png"
+        icon: "assets/images/white-wine.webp"
     }
 ]
 
@@ -291,7 +291,7 @@ function generateCards() {
         let divPicture = document.createElement('div')
         divPicture.className = "article__img"
         article.appendChild(divPicture)
-        
+
         // Create the picture
         let picture = document.createElement("img");
         picture.setAttribute("alt", dish.dishName);
@@ -303,7 +303,7 @@ function generateCards() {
         // Create the "add" button
         let addItem = document.createElement("img")
         addItem.setAttribute("alt", "add");
-        addItem.setAttribute("src", "assets/images/icones/ajout-panier.png");
+        addItem.setAttribute("src", "assets/images/icones/ajout-panier.webp");
         addItem.className = "article__addButton";
         article.appendChild(addItem);
 
