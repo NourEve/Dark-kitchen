@@ -19,6 +19,7 @@ body {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 .header__fixe__burger img {
   width: 10vw;
@@ -43,6 +44,9 @@ body {
   width: 50%;
   margin-left: -10%;
   margin-top: -5%;
+  transform: translateX(-100%);
+  overflow: hidden;
+  max-height: 0;
 }
 .header__menu__h1 {
   margin-top: 55%;
@@ -148,7 +152,7 @@ body {
   align-items: flex-end;
   background-color: #BF5555;
   width: 30vw;
-  height: 22vh;
+  height: 25vh;
   border-radius: 5vw;
   padding-right: 5%;
 }
@@ -159,6 +163,7 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 4vw;
   font-weight: 400;
+  margin-top: 0;
 }
 .article__container__description {
   text-align: end;
