@@ -1,1 +1,292 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;700&display=swap");
+body {
+  background-color: #FEF6EB;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header__fixe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: rgb(168, 183, 214);
+  border-bottom-left-radius: 5vw;
+  border-bottom-right-radius: 5vw;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.header__fixe__burger img {
+  width: 10vw;
+  position: relative;
+  left: 0;
+}
+.header__fixe__logo img {
+  width: 50vw;
+}
+.header__fixe__panier img {
+  width: 10vw;
+  position: relative;
+  right: 0;
+}
+.header__menu, .header__order, .header__colormode {
+  display: flex;
+  flex-direction: column;
+  padding-left: 36%;
+  background-color: #F6C8BB;
+  top: 0;
+  left: 0;
+  width: 50%;
+  margin-left: -10%;
+  margin-top: -5%;
+}
+.header__menu__h1 {
+  margin-top: 55%;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 14vw;
+  font-weight: 400;
+}
+.header__nav__card {
+  width: 30%;
+  margin: 0% 20% 10% -20%;
+  padding: 5% 20% 5% 20%;
+  text-align: center;
+  border-radius: 5vw;
+}
+.header__nav__card--bleu {
+  background-color: rgba(168, 183, 214, 0.5);
+}
+.header__nav__card--rose {
+  background-color: rgba(224, 106, 124, 0.5);
+}
+.header__nav__card--img {
+  width: 10vw;
+  height: auto;
+}
+.header__nav__card p {
+  font-family: "font-family: 'Montserrat Alternates', sans-serif";
+  margin-top: -5%;
+  margin-bottom: 0%;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 5vw;
+  font-weight: 400;
+  color: #BF5555;
+  width: 150%;
+  margin-left: -25%;
+}
+.header__colormode {
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: -27%;
+  padding-right: 17%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.header__colormode--style {
+  width: 10vw;
+  height: auto;
+}
+.header__order {
+  flex-direction: column;
+}
+.header__order__cart {
+  background-color: #FEF6EB;
+}
+.header__order__cart--title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 5vw;
+  font-weight: 400;
+}
+.header__order__cart--price {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 5vw;
+  font-weight: 400;
+}
+
+.main {
+  padding-top: 25%;
+}
+.main__choose {
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 6vw;
+  font-weight: 700;
+}
+.main__section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article {
+  border-radius: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 43vw;
+  height: 50vh;
+  margin: 5% 3% 5% 3%;
+  background-color: #F6C8BB;
+}
+.article__img {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 20vh;
+}
+.article__img__bg {
+  width: auto;
+  height: 100%;
+}
+.article__addButton {
+  width: auto;
+  height: 10%;
+  position: relative;
+  right: 30vw;
+  bottom: 1vw;
+}
+.article__name {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 4vw;
+  font-weight: 700;
+  padding-right: 4%;
+  text-align: center;
+  width: 40vw;
+}
+.article__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #BF5555;
+  width: 30vw;
+  height: 25vh;
+  border-radius: 5vw;
+  padding-right: 5%;
+}
+.article__container__mainCat {
+  display: none;
+}
+.article__container__subCat {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 4vw;
+  font-weight: 400;
+  margin-top: 0;
+}
+.article__container__description {
+  text-align: end;
+  margin-top: -8%;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 3vw;
+  font-weight: 300;
+}
+.article__container__price {
+  margin-top: -8%;
+  margin-bottom: -10%;
+  background-color: rgba(168, 183, 214, 0.5);
+  padding: 2%;
+  border-radius: 2vw;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 4vw;
+  font-weight: 300;
+}
+
+.pizzaMan {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10%;
+  align-content: center;
+  align-items: center;
+  background-color: rgba(168, 183, 214, 0.5);
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  margin-bottom: -5vw;
+}
+.footer__h4 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 4vw;
+  font-weight: 400;
+  width: 75%;
+  text-align: center;
+}
+.footer__ul {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 3.5vw;
+  font-weight: 400;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  gap: 5vw;
+  margin-right: 10vw;
+}
+
+body.dark {
+  background-color: #4E4C49;
+}
+body.dark .header__colormode__moon {
+  display: none;
+}
+body.dark .header__fixe {
+  background-color: #748cbd;
+}
+body.dark .header__menu, body.dark .header__colormode, body.dark .header__order {
+  background-color: #ed9177;
+}
+body.dark .header__menu__h1 {
+  color: #FEF6EB;
+}
+body.dark .header__nav__card--bleu {
+  background-color: rgba(116, 140, 189, 0.5);
+}
+body.dark .header__nav__card--rose {
+  background-color: rgba(210, 44, 69, 0.5);
+}
+body.dark .header__nav__card p {
+  color: #FEF6EB;
+}
+body.dark .main__choose {
+  color: #FEF6EB;
+}
+body.dark .article {
+  background-color: #ed9177;
+}
+body.dark .article__name {
+  color: #FEF6EB;
+}
+body.dark .article__container {
+  color: lighten #BF5555, 20%;
+}
+body.dark .article__container__subCat {
+  color: #FEF6EB;
+}
+body.dark .article__container__description {
+  color: #FEF6EB;
+}
+body.dark .article__container__price {
+  background-color: rgba(116, 140, 189, 0.5);
+  color: #FEF6EB;
+}
+body.dark .footer {
+  background-color: rgba(116, 140, 189, 0.5);
+}
+body.dark .footer__h4 {
+  color: #FEF6EB;
+}
+body.dark .footer__ul a {
+  color: #FEF6EB;
+}/*# sourceMappingURL=style.css.map */
