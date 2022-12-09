@@ -74,7 +74,7 @@ function removeCartItem(event) {
 
 function addToCartClicked(event) {
   var plus = event.target;
-  var shopItem = plus.parentElement.parentElement;
+  var shopItem = plus.parentElement;
   var title = shopItem.getElementsByClassName("article__name")[0].innerText;
   var price = shopItem.getElementsByClassName("article__container__price")[0]
     .innerText;
