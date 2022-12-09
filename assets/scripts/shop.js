@@ -1,4 +1,4 @@
-var cartOfPrices = [];
+var articles = [];
 
 if (document.readyState == "loading") {
   document.addEventListener("DOMContentLoaded", ready);
@@ -11,6 +11,7 @@ function ready() {
   var addToCart = document.getElementsByClassName("article__addButton");
   for (var i = 0; i < addToCart.length; i++) {
     var plus = addToCart[i];
+    var index = i;
     plus.addEventListener("click", addToCartClicked);
     updateTotal();
   }
@@ -67,14 +68,20 @@ function addItemToCart(title, price, imgSrc) {
   cartItems.append(cartRow);
 
   var priceToPush = parseFloat(price.replace("€", ""))
-  cartOfPrices.push(priceToPush);
+
+  let index = 0;
+  index++;
+  articles.push({ Name: title, Price: priceToPush, Index: index })
+
+
 }
 
 function removeCartItem(event) {
-  console.log(event.target);
   var buttonClicked = event.target;
   buttonClicked.parentElement.parentElement.remove();
+  articles = articles.filter(v => v !== title);
   updateTotal();
+  console.table(articles)
 }
 
 function addToCartClicked(event) {
@@ -94,25 +101,27 @@ function addToCartClicked(event) {
     var button = removeItemButtons[i];
 
     button.addEventListener("click", removeCartItem);
+
   }
+  console.table(articles)
 }
 
 function updateTotal() {
   var total = 0;
   var quantityElement = document.getElementsByTagName("input")[0];
-  console.log(quantityElement);
 
-  var quantity = quantityElement.value;
+//   console.log(cartOfPrices)
 
-  quantityElement.addEventListener("change", (event) => {
-    var value = event.target.value;
 
-    for (var i = 0; i < cartOfPrices.length; i++) {
-      total += cartOfPrices[i] * value
-      console.log(Number(cartOfPrices[i]), value)
-      console.log(total)
-    }
-  });
+//   quantityElement.addEventListener("change", (event) => {
+//     var value = event.target.value;
+
+//     for (var i = 0; i < cartOfPrices.length; i++) {
+    //   total = cartOfPrices[i] * value
+    //   console.log(Number(cartOfPrices[i]), value)
+    //   console.log(total)
+//     }
+//   });
 
   document.getElementsByClassName("cart-total-price")[0].innerText =
     "€" + total;
