@@ -79,7 +79,7 @@ function addItemToCart(title, price, imgSrc) {
   let quantityButton = document.createElement("input");
   quantityButton.className = "header__cart__quantity__input";
   quantityButton.setAttribute("type", "number");
-  quantityButton.setAttribute("value", "1");
+  quantityButton.setAttribute("value","1");
   cartQuantity.appendChild(quantityButton);
 
   //create the removeItem button REMOVE
@@ -123,7 +123,8 @@ function updateTotal() {
     )[0];
     var price = parseFloat(priceElement.innerText.replace("€", ""));
     var quantity = quantityElement.value;
-        total = price * quantity
+    total = price * quantity
+
     quantityElement.addEventListener("change", (event) => {
       for (i = 0; i < cartRows.length; i++) {
         var input = event.target;
@@ -133,13 +134,12 @@ function updateTotal() {
         }
 
         let value = quantityElement.value;
-        newTotal = price * value;
         // console.log(newTotal)
-        let result = total + newTotal
-        console.log(result)
+        console.log(quantity)
+        var total1 = price * value
       }
-    //   document.getElementsByClassName("cart-total-price")[0].innerText =
-    //     "€" + total.toFixed(2);
+      total = total + total1
+      document.getElementsByClassName("cart-total-price")[0].innerText = "€" + total1.toFixed(2);
     });
   }
 }
