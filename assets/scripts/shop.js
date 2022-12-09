@@ -14,9 +14,9 @@ function ready() {
   }
 
   var cartItemContainer = document.getElementsByClassName("cart-items")[0];
-  var cartRows = cartItemContainer.getElementsByClassName("cart-row");
+  var cartRows = cartItemContainer.getElementsByClassName("header__cart__row");
   var quantityElement = cartRow.getElementsByClassName(
-    "cart-quantity-input"
+    "header__cart__quantity__input"
   )[0];
   for (var i = 0; i < cartRows.length; i++) {
     var cartRow = cartRows[i];
@@ -34,7 +34,7 @@ function ready() {
   }
 }
 
-var removeItemButtons = document.getElementsByClassName("removeItem");
+var removeItemButtons = document.getElementsByClassName("header__cart__quantity__remove");
 for (var i = 0; i < removeItemButtons.length; i++) {
   var button = removeItemButtons[i];
   button.addEventListener("click", removeCartItem);
@@ -42,12 +42,12 @@ for (var i = 0; i < removeItemButtons.length; i++) {
 
 function addItemToCart(title, price, imgSrc) {
   var cartRow = document.createElement("div");
-  cartRow.classList.add("cart-row");
+  cartRow.classList.add("header__cart__row");
   var cartItems = document.getElementsByClassName("cart-items")[0];
 
   //create the .cart-item cart-column
   let cartItemCartColumn = document.createElement("div");
-  cartItemCartColumn.className = "cart-item cart-column";
+  cartItemCartColumn.className = "header__cart__row__item cart-column";
   cartRow.appendChild(cartItemCartColumn);
 
   //create the cart-item-image
@@ -55,36 +55,36 @@ function addItemToCart(title, price, imgSrc) {
   let cartImage = document.createElement("img");
   cartImage.setAttribute("alt", "shopped product");
   cartImage.setAttribute("src", imgSrc);
-  cartImage.className = "cart-item-image";
+  cartImage.className = "header__cart__row__image";
   cartItemCartColumn.appendChild(cartImage);
 
   //create the cart-item-title span
   let cartTitle = document.createElement("span");
-  cartTitle.className = "cart-item-title";
+  cartTitle.className = "header__cart__row__title";
   cartTitle.innerText = title;
   cartItemCartColumn.appendChild(cartTitle);
 
-  //create the cart-price cart-column span
+  //create the header__cart__price cart-column span
   let cartPrice = document.createElement("span");
-  cartPrice.className = "cart-price cart-column";
+  cartPrice.className = "header__cart__price cart-column";
   cartPrice.innerText = price;
   cartRow.appendChild(cartPrice);
 
-  //create the cart-quantity cart-column div
+  //create the header__cart__quantity cart-column div
   let cartQuantity = document.createElement("div");
-  cartQuantity.className = "cart-quantity cart-column";
+  cartQuantity.className = "header__cart__quantity cart-column";
   cartRow.appendChild(cartQuantity);
 
-  //create the cart-quantity-input input type number, value 1
+  //create the header__cart__quantity__input input type number, value 1
   let quantityButton = document.createElement("input");
-  quantityButton.className = "cart-quantity-input";
+  quantityButton.className = "header__cart__quantity__input";
   quantityButton.setAttribute("type", "number");
   quantityButton.setAttribute("value", "1");
   cartQuantity.appendChild(quantityButton);
 
   //create the removeItem button REMOVE
   let removeButton = document.createElement("button");
-  removeButton.className = "removeItem";
+  removeButton.className = "header__cart__quantity__remove";
   removeButton.innerText = "REMOVE";
   cartQuantity.appendChild(removeButton);
 
@@ -92,11 +92,11 @@ function addItemToCart(title, price, imgSrc) {
 }
 
 function removeCartItem() {
-    console.log("té")
-//   var buttonClicked = event.target;
-//   console.log("54");
-//   buttonClicked.parentElement.remove();
-//   updateTotal();
+  console.log("té");
+  //   var buttonClicked = event.target;
+  //   console.log("54");
+  //   buttonClicked.parentElement.remove();
+  //   updateTotal();
 }
 
 function addToCartClicked(event) {
@@ -113,29 +113,33 @@ function addToCartClicked(event) {
 
 function updateTotal() {
   var cartItemContainer = document.getElementsByClassName("cart-items")[0];
-  var cartRows = cartItemContainer.getElementsByClassName("cart-row");
+  var cartRows = cartItemContainer.getElementsByClassName("header__cart__row");
   var total = 0;
   for (var i = 0; i < cartRows.length; i++) {
     var cartRow = cartRows[i];
-    var priceElement = cartRow.getElementsByClassName("cart-price")[0];
+    var priceElement = cartRow.getElementsByClassName("header__cart__price")[0];
     var quantityElement = cartRow.getElementsByClassName(
-      "cart-quantity-input"
+      "header__cart__quantity__input"
     )[0];
     var price = parseFloat(priceElement.innerText.replace("€", ""));
     var quantity = quantityElement.value;
-    total = total + price * quantity;
-
+        total = price * quantity
     quantityElement.addEventListener("change", (event) => {
-      var input = event.target;
+      for (i = 0; i < cartRows.length; i++) {
+        var input = event.target;
 
-      if (isNaN(input.value) || input.value <= 0) {
-        input.value = 1;
+        if (isNaN(input.value) || input.value <= 0) {
+          input.value = 1;
+        }
+
+        let value = quantityElement.value;
+        newTotal = price * value;
+        // console.log(newTotal)
+        let result = total + newTotal
+        console.log(result)
       }
-
-      let value = quantityElement.value;
-      total = price * value;
+    //   document.getElementsByClassName("cart-total-price")[0].innerText =
+    //     "€" + total.toFixed(2);
     });
   }
-  document.getElementsByClassName("cart-total-price")[0].innerText =
-    "€" + total.toFixed(2);
 }
