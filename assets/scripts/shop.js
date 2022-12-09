@@ -10,35 +10,40 @@ function ready() {
   for (var i = 0; i < addToCart.length; i++) {
     var plus = addToCart[i];
     plus.addEventListener("click", addToCartClicked);
+    updateTotal();
   }
 
-  var quantityInputs = document.getElementsByClassName("cart-quantity-input");
-  for (var i = 0; i < quantityInputs.length; i++) {
-    var input = quantityInputs[i];
-    input.addEventListener("change", quantityChanged);
-  }
+  var cartItemContainer = document.getElementsByClassName("cart-items")[0];
+  var cartRows = cartItemContainer.getElementsByClassName("cart-row");
+  var quantityElement = cartRow.getElementsByClassName(
+    "cart-quantity-input"
+  )[0];
+  for (var i = 0; i < cartRows.length; i++) {
+    var cartRow = cartRows[i];
+    quantityElement.addEventListener("change", (event) => {
+      var input = event.target;
 
-  var removeItemButtons = document.getElementsByClassName("removeItem");
-  for (var i = 0; i < removeItemButtons.length; i++) {
-    var button = removeItemButtons[i];
-    button.addEventListener("click", removeCartItem);
-  }
+      if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1;
+      }
 
-  updateTotal();
+      let value = quantityElement.value;
+      total = price * value;
+      updateTotal();
+    });
+  }
+}
+
+var removeItemButtons = document.getElementsByClassName("removeItem");
+for (var i = 0; i < removeItemButtons.length; i++) {
+  var button = removeItemButtons[i];
+  button.addEventListener("click", removeCartItem);
 }
 
 function addItemToCart(title, price, imgSrc) {
   var cartRow = document.createElement("div");
   cartRow.classList.add("cart-row");
   var cartItems = document.getElementsByClassName("cart-items")[0];
-  // var cartRowContents =
-  //     `
-  //     <span class="cart-item-title">${title}</span>
-  // <span class="cart-price cart-column">${price}</span>
-  // <div class="cart-quantity cart-column">
-  //     <input class="cart-quantity-input" type="number" value="1" />
-  //     <button class="removeItem" type="button">REMOVE</button>
-  // </div>`
 
   //create the .cart-item cart-column
   let cartItemCartColumn = document.createElement("div");
@@ -80,15 +85,18 @@ function addItemToCart(title, price, imgSrc) {
   //create the removeItem button REMOVE
   let removeButton = document.createElement("button");
   removeButton.className = "removeItem";
+  removeButton.innerText = "REMOVE";
   cartQuantity.appendChild(removeButton);
 
   cartItems.append(cartRow);
 }
 
-function removeCartItem(event) {
-  var buttonClicked = event.target;
-  buttonClicked.parentElement.parentElement.remove();
-  updateTotal();
+function removeCartItem() {
+    console.log("té")
+//   var buttonClicked = event.target;
+//   console.log("54");
+//   buttonClicked.parentElement.remove();
+//   updateTotal();
 }
 
 function addToCartClicked(event) {
@@ -97,7 +105,8 @@ function addToCartClicked(event) {
   var title = shopItem.getElementsByClassName("article__name")[0].innerText;
   var price = shopItem.getElementsByClassName("article__container__price")[0]
     .innerText;
-  let imgSrc = document.getElementsByClassName("article__img")[0].src;
+  let img = shopItem.querySelector("img");
+  let imgSrc = img.src;
   addItemToCart(title, price, imgSrc);
   updateTotal();
 }
@@ -125,9 +134,8 @@ function updateTotal() {
 
       let value = quantityElement.value;
       total = price * value;
-
-      document.getElementsByClassName("cart-total-price")[0].innerText =
-        "€" + total.toFixed(2);
     });
   }
+  document.getElementsByClassName("cart-total-price")[0].innerText =
+    "€" + total.toFixed(2);
 }
