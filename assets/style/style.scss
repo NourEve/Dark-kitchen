@@ -7,6 +7,7 @@ $blue : rgba(168, 183, 214, 0.5);
 $roseClear : #F6C8BB;
 $rose : rgba(224, 106, 124, 0.5);
 $red : #BF5555;
+$dark: #4E4C49;
 $font : "font-family: 'Montserrat Alternates', sans-serif";
 
 //Mixins
@@ -15,7 +16,12 @@ $font : "font-family: 'Montserrat Alternates', sans-serif";
     font-size: $size;
     font-weight: $weigth;
 }
-
+@mixin darken ($colour) {
+    background-color: darken($colour, 15%);
+}
+@mixin lighten ($colour) {
+    color: lighten ($colour, 20%);
+}
 
 //Mise en page
 body {
@@ -23,6 +29,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+
 }
 
 
@@ -71,9 +78,9 @@ body {
         width: 50%;
         margin-left: -10%;
         margin-top: -5%;
-        transform: translateX(-100%);
-        overflow: hidden;
-        max-height: 0;
+        //transform: translateX(-100%);
+        //overflow: hidden;
+        //max-height: 0;
         &__h1{
             margin-top: 55%;
             @include fonts(14vw, 400);
@@ -111,12 +118,29 @@ body {
         @extend .header__menu;
         flex-direction: row;
         justify-content: space-evenly;
-        margin-left: -43%;
+        margin-left: -27%;
+        padding-right: 17%;
         padding-top: 5%;
         padding-bottom: 5%;
         &--style {
             width: 10vw;
             height: auto;
+        }
+    }
+    &__order {
+        @extend .header__menu;
+        flex-direction: column;
+        //transform: translateX(100%);
+        &__cart {
+            background-color: $clear;
+            &__total {
+            }
+            &--title {
+                @include fonts(5vw, 400);
+            }
+            &--price {
+                @include fonts(5vw, 400);
+            }
         }
     }
 }
@@ -236,3 +260,79 @@ body {
 
 }
 
+//DarkMode
+body.dark {
+    background-color: $dark;
+    .header{
+        
+        &__colormode{
+            &__moon{
+               display: none;
+            }
+        }
+        
+        &__fixe{
+            @include darken(rgb(168, 183, 214));
+        }
+
+        &__menu{
+            @include darken ($roseClear);
+        &__h1{
+            color: $clear;
+        }
+        }
+
+        &__nav{
+            &__card{
+                &--bleu{
+                   @include darken($blue);
+                }
+                &--rose{
+                    @include darken($rose);
+                }
+
+                p{
+                    color: $clear;
+                }
+                
+            }
+        }
+      
+     }
+     
+     .main{
+        &__choose{
+                color: $clear;
+            }
+        }  
+     .article{
+        @include darken($roseClear);
+        &__name{
+           color: $clear;
+        }
+        &__container{
+            @include lighten ($red);
+            &__subCat{
+                color: $clear;
+            }
+            &__description{
+                color: $clear;
+            }
+            &__price{
+                @include darken($blue);
+                color: $clear;
+            }
+        }
+     }
+     .footer{
+        @include darken($blue);
+        &__h4{
+            color: $clear;
+        }
+        &__ul{
+            a{
+                 color: $clear;
+            }
+        }
+     }
+}

@@ -30,7 +30,7 @@ const italianDishes = [
         dishName: "Hawaii",
         mainCat: "Pizza",
         subCat: "Tomato",
-        description: "A réécrire ",
+        description: "Tomatoes, ham and pineapple",
         price: "7€", // €
         icon: "./assets/images/hawaii.webp"
     },
@@ -94,7 +94,7 @@ const italianDishes = [
         dishName: "Vongole",
         mainCat: "Pasta",
         subCat: "Spaghetti",
-        description: "à modifier",
+        description: "Pasta with clams and parsley",
         price: "13.50€", // €
         icon: "assets/images/spaghetti-scampi.webp"
     },
@@ -111,8 +111,8 @@ const italianDishes = [
     {dishName: " Lasagne",
     mainCat: "Other",
     subCat: "",
-    description: "à modifier",
-    price: "14.50€", // €
+    description: "Ricotta, bolognese sauce and bechamel sauce",
+    price: "12.50€", // €
     icon: "assets/images/lasagne.webp"
     },
 
@@ -120,8 +120,8 @@ const italianDishes = [
     {dishName: " Ossobuco",
     mainCat: "Other",
     subCat: "",
-    description: "à modifier",
-    price: "15€", // €
+    description: "Braised veal in white wine, and vegetables",
+    price: "14€", // €
     icon: "assets/images/ossobuco.webp"
     },
 
