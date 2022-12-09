@@ -34,7 +34,7 @@ body {
   position: relative;
   right: 0;
 }
-.header__menu, .header__colormode {
+.header__menu, .header__order, .header__colormode {
   display: flex;
   flex-direction: column;
   padding-left: 36%;
@@ -44,9 +44,6 @@ body {
   width: 50%;
   margin-left: -10%;
   margin-top: -5%;
-  transform: translateX(-100%);
-  overflow: hidden;
-  max-height: 0;
 }
 .header__menu__h1 {
   margin-top: 55%;
@@ -85,13 +82,30 @@ body {
 .header__colormode {
   flex-direction: row;
   justify-content: space-evenly;
-  margin-left: -43%;
+  margin-left: -27%;
+  padding-right: 17%;
   padding-top: 5%;
   padding-bottom: 5%;
 }
 .header__colormode--style {
   width: 10vw;
   height: auto;
+}
+.header__order {
+  flex-direction: column;
+}
+.header__order__cart {
+  background-color: #FEF6EB;
+}
+.header__order__cart--title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 5vw;
+  font-weight: 400;
+}
+.header__order__cart--price {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 5vw;
+  font-weight: 400;
 }
 
 .main {
@@ -219,4 +233,60 @@ body {
   align-items: center;
   gap: 5vw;
   margin-right: 10vw;
+}
+
+body.dark {
+  background-color: #4E4C49;
+}
+body.dark .header__colormode__moon {
+  display: none;
+}
+body.dark .header__fixe {
+  background-color: #748cbd;
+}
+body.dark .header__menu, body.dark .header__colormode, body.dark .header__order {
+  background-color: #ed9177;
+}
+body.dark .header__menu__h1 {
+  color: #FEF6EB;
+}
+body.dark .header__nav__card--bleu {
+  background-color: rgba(116, 140, 189, 0.5);
+}
+body.dark .header__nav__card--rose {
+  background-color: rgba(210, 44, 69, 0.5);
+}
+body.dark .header__nav__card p {
+  color: #FEF6EB;
+}
+body.dark .main__choose {
+  color: #FEF6EB;
+}
+body.dark .article {
+  background-color: #ed9177;
+}
+body.dark .article__name {
+  color: #FEF6EB;
+}
+body.dark .article__container {
+  color: lighten #BF5555, 20%;
+}
+body.dark .article__container__subCat {
+  color: #FEF6EB;
+}
+body.dark .article__container__description {
+  color: #FEF6EB;
+}
+body.dark .article__container__price {
+  background-color: rgba(116, 140, 189, 0.5);
+  color: #FEF6EB;
+}
+body.dark .footer {
+  background-color: rgba(116, 140, 189, 0.5);
+}
+body.dark .footer__h4 {
+  color: #FEF6EB;
+}
+body.dark .footer__ul a {
+  color: #FEF6EB;
 }/*# sourceMappingURL=style.css.map */
