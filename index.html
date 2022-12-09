@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/pizza.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./assets/style/style.css" />
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/pizza.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/style/style.css">
 
     <script src="./assets/scripts/card_generation.js" defer></script>
     <script src="./assets/scripts/dark_mode.js" defer></script>
@@ -18,104 +15,73 @@
     <title>Casanostra - Turn off the oven, delivery is much faster!</title>
   </head>
 
-  <body>
-    <header class="header">
-      <div class="header__fixe">
-        <div class="header__fixe__burger">
-          <img src="./assets/images/icones/menu.png" alt="icon menu" />
-        </div>
-        <div class="header__fixe__logo">
-          <img src="./assets/images/Logo-CasaNostra.png" alt="logo" />
-        </div>
-        <div class="header__fixe__panier">
-          <img src="./assets/images/icones/panier.png" alt="icon cart" />
-        </div>
+<body>
+  <header class="header">
+    <div class="header__fixe">
+      <div class="header__fixe__burger">
+        <img src="./assets/images/icones/menu.png" alt="icon menu">
       </div>
+      <div class="header__fixe__logo">
+        <img src="./assets/images/Logo-CasaNostra.png" alt="logo">
+      </div>
+      <div class="header__fixe__panier">
+        <img src="./assets/images/icones/panier.png" alt="icon cart">
+      </div>
+    </div>
 
-      <div class="header__menu">
-        <h1 class="header__menu__h1">Hi!</h1>
-        <nav class="header__nav">
-          <div class="header__nav__card header__nav__card--bleu">
-            <img
-              class="header__nav__card--img"
-              src="assets/images/icones/pizza (1).png"
-              alt="icon pizza"
-            />
-            <p>Pizza</p>
-          </div>
-          <div class="header__nav__card header__nav__card--rose">
-            <img
-              class="header__nav__card--img"
-              src="assets/images/icones/pates.png"
-              alt="icon pasta"
-            />
-            <p>Pasta</p>
-          </div>
-          <div class="header__nav__card header__nav__card--bleu">
-            <img
-              class="header__nav__card--img"
-              src="assets/images/icones/feijoada.png"
-              alt="icon dishes"
-            />
-            <p>Dishes</p>
-          </div>
-          <div class="header__nav__card header__nav__card--rose">
-            <img
-              class="header__nav__card--img"
-              src="assets/images/icones/boisson-alcoolisee (2).png"
-              alt="icon drinks"
-            />
-            <p>Drinks</p>
-          </div>
-          <div class="header__nav__card header__nav__card--bleu">
-            <img
-              class="header__nav__card--img"
-              src="assets/images/gateau.png"
-              alt="icon desserts"
-            />
-            <p>Desserts</p>
-          </div>
-          <div class="header__nav__card header__nav__card--rose">
-            <img
-              class="header__nav__card--img"
-              src="assets/images/icones/liste.png"
-              alt="icon all"
-            />
-            <p>All</p>
-          </div>
-        </nav>
-      </div>
-
-      <div class="header__colormode">
-        <div class="header__colormode__moon header__colormode--style">
-          <img
-            class="header__colormode--style"
-            src="./assets/images/icones/lune.png"
-            alt="icon moon dark_mode"
-          />
+    <div class="header__menu">
+      <h1 class="header__menu__h1">Hi!</h1>
+      <nav class="header__nav">
+        <div class="header__nav__card header__nav__card--bleu">
+          <img class="header__nav__card--img" src="assets/images/icones/pizza-icons.png" alt="icon pizza">
+          <p>Pizza</p>
         </div>
-        <div class="header__colormode__sun header__colormode--style">
-          <img
-            class="header__colormode--style"
-            src="./assets/images/icones/sun.png"
-            alt="icon sun light_mode"
-          />
+        <div class="header__nav__card header__nav__card--rose">
+          <img class="header__nav__card--img" src="assets/images/icones/pates.png" alt="icon pasta">
+          <p>Pasta</p>
         </div>
-      </div>
-    </header>
-    <main class="main">
-      <!-- Dynamically display cards here -->
-      <h2 class="main__choose">Select your product</h2>
-    </main>
-    <!-- TEST PURPOSES ONLY -->
-    <div class="order_test">
-      <!-- here lies the placeholder button while there is no "-" image to actually remove items from the cart -->
+        <div class="header__nav__card header__nav__card--bleu">
+          <img class="header__nav__card--img" src="assets/images/icones/feijoada.png" alt="icon dishes">
+          <p>Dishes</p>
+        </div>
+        <div class="header__nav__card header__nav__card--rose">
+          <img class="header__nav__card--img" src="assets/images/icones/boisson-alcoolisee-icon.png" alt="icon drinks">
+          <p>Drinks</p>
+        </div>
+        <div class="header__nav__card header__nav__card--bleu">
+          <img class="header__nav__card--img" src="assets/images/gateau.png" alt="icon desserts">
+          <p>Desserts</p>
+        </div>
+        <div class="header__nav__card header__nav__card--rose">
+          <img class="header__nav__card--img" src="assets/images/icones/liste.png" alt="icon all">
+          <p>All</p>
+        </div>
+      </nav>
+    </div>
 
-      <div class="cart-items"></div>
-      <div class="cart-total">
-        <strong class="cart-total-title">Total</strong>
-        <span class="cart-total-price"></span>
+    <div class="header__colormode">
+      <div class="header__colormode__moon header__colormode--style">
+        <img class="header__colormode--style" src="./assets/images/icones/lune.png" alt="icon moon dark_mode">
       </div>
+      <div class="header__colormode__sun header__colormode--style">
+        <img class="header__colormode--style" src="./assets/images/icones/sun.png" alt="icon sun light_mode">
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <!-- Dynamically display cards here -->
+    <h2 class="main__choose">Select your product</h2>
+  </main>
+  <!-- TEST PURPOSES ONLY -->
+  <div class="order_test">
+    <!-- here lies the placeholder button while there is no "-" image to actually remove items from the cart -->
+
+    <div class="cart-items">
+
+    </div>
+    <div class="cart-total">
+      <strong class="cart-total-title">Total</strong>
+      <span class="cart-total-price"></span>
     </div>
 
     <div>
