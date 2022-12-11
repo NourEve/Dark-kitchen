@@ -56,29 +56,31 @@ body {
             }
         }
     }
-    &__menu {
+    &__all{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: $roseClear;
         width:10%;
+        height: 100%;
         margin-top: -7%;
-        //transform: translateX(-100%);
-        //overflow: hidden;
-        //max-height: 0;
+        z-index: 1;
+        position: fixed;
+    }
+    &__menu {
         &__h1{
             @include fonts(3vw, 400);
             background-color: $blue;
             border-radius: 50%;
             padding: 7% 7% 7% 7%;
-            margin: 30% 0% 20% 0%;
+            margin: -50% 0% 80% 0%;
         }
     }
     &__nav {
         &__card {
             width: 100%;
-            margin: 0% 20% 15% -10%;
+            margin: 5% 20% 15% -12%;
             padding: 7% 10% 7% 10%;
             text-align: center;
             border-radius: 1vw;
@@ -106,12 +108,11 @@ body {
         @extend .header__menu;
         flex-direction: row;
         justify-content: space-evenly;
-        margin-left: 0%;
-        padding-top: 8%;
-        padding-bottom: 1.5%;
+        margin-top:30%;
         &--style {
             width: 2vw;
             height: auto;
+            margin-top:30%;
         }
     }
     &__order {
@@ -120,7 +121,9 @@ body {
         align-content: center;
         background-color: $roseClear;
         width:20%;
-        transform: translate(78.7vw, -45vw);
+        position: absolute;
+        left: 80%;
+        bottom: 80%;
         border-top-left-radius: 1vw;
         border-bottom-left-radius: 1vw;
         
@@ -145,17 +148,17 @@ body {
 
 }
 .main {
+
     &__welcome{
         padding-left: 15%;
         text-align: left;
         @include fonts(2vw, 700);
-        transform: translateY(-50vw);
+
     }
     &__choose {
         padding-left: 15%;
         text-align: left;
         @include fonts(1.5vw, 700);
-        transform: translateY(-50vw);
     }
     &__section {
         display: flex;
@@ -231,9 +234,12 @@ body {
 }
 
 .pizzaMan {
-    width: 35%;
-    transform: translate(35vw,-300vw);
+    width: 45%;
+    position: absolute;
+    left: 28%;
+    bottom: 54%;
     opacity: 0.6;
+    z-index: -1;
 }
 
 .footer{ 
@@ -241,7 +247,6 @@ body {
     flex-direction:column;
     justify-content: center;
     background-color: $blue;
-    white-space:nowrap;
 
 
     &__h4{
