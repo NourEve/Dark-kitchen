@@ -17,7 +17,7 @@ function ready() {
   }
 }
 
-function addItemToCart(title, price, imgSrc) {
+function addItemToCart(title, price) {
   var cartRow = document.createElement("div");
   cartRow.classList.add("header__cart__row");
   var cartItems = document.getElementsByClassName("cart-items")[0];
@@ -28,12 +28,6 @@ function addItemToCart(title, price, imgSrc) {
   cartRow.appendChild(cartItemCartColumn);
 
   //create the cart-item-image
-
-  let cartImage = document.createElement("img");
-  cartImage.setAttribute("alt", "shopped product");
-  cartImage.setAttribute("src", imgSrc);
-  cartImage.className = "header__cart__row__image";
-  cartItemCartColumn.appendChild(cartImage);
 
   //create the cart-item-title span
   let cartTitle = document.createElement("span");
@@ -90,9 +84,9 @@ function addToCartClicked(event) {
   var title = shopItem.getElementsByClassName("article__name")[0].innerText;
   var price = shopItem.getElementsByClassName("article__container__price")[0]
     .innerText;
-  let img = shopItem.querySelector("img");
-  let imgSrc = img.src;
-  addItemToCart(title, price, imgSrc);
+  //let img = shopItem.querySelector("img");
+  //let imgSrc = img.src;
+  addItemToCart(title, price);
   updateTotal();
   var removeItemButtons = document.getElementsByClassName(
     "header__cart__quantity__remove"

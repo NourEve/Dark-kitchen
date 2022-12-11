@@ -78,9 +78,9 @@ body {
         width: 50%;
         margin-left: -10%;
         margin-top: -5%;
-        //transform: translateX(-100%);
-        //overflow: hidden;
-        //max-height: 0;
+        transform: translateX(-100%);
+        overflow: hidden;
+        max-height: 0;
         &__h1{
             margin-top: 55%;
             @include fonts(14vw, 400);
@@ -128,18 +128,72 @@ body {
         }
     }
     &__order {
-        @extend .header__menu;
+        display: flex;
         flex-direction: column;
-        //transform: translateX(100%);
+        padding-right: 0;
+        padding-left: 20%;
+        background-color: $roseClear;
+        top: 0;
+        right: 0;
+        width: 50%;
+        margin-left: 30%;
+        margin-top: -5%;
+        transform: translateX(100%);
+        overflow: hidden;
+        max-height: 0;
         &__cart {
             background-color: $clear;
+            margin: 65% 10% 10% -20%;
+            padding: 5% 10% 5% 10%;
+            border-radius: 5vw;
+            color: $red;
             &__total {
+                color: $red;
+                background-color: $clear;
+                margin-bottom: 10%;
+                width: 60%;
+                padding: 5%;
+                border-radius: 5vw;
             }
             &--title {
-                @include fonts(5vw, 400);
+                @include fonts(6vw, 400);
+                margin-right: 10%;
             }
             &--price {
-                @include fonts(5vw, 400);
+                @include fonts(6vw, 700);
+            }
+        }
+    }
+    &__cart{
+        &__row{
+            &__item {
+                margin-top: 10%;
+            }
+            &__title {
+                @include fonts(4.9vw, 700);
+            }
+        }
+        &__price {
+            @include fonts(5vw, 400);
+            margin-left: 75%;
+        }
+        &__quantity {
+            &__input {
+                color: $red;
+                background-color: $clear;
+                width: 20%;
+                margin-left: 15%;
+                text-align: end;
+                @include fonts(5vw, 700);
+                border: 2px solid $red;
+                margin-bottom: 10%;
+            }
+            &__remove{
+                color: $red;
+                background-color: $clear;
+                width: 60%;
+                @include fonts(5vw, 300);
+                border: 2px solid $red;
             }
         }
     }
@@ -147,9 +201,12 @@ body {
 
 .main {
     padding-top: 25%;
-    &__choose {
+    &__welcome {
         text-align: center;
         @include fonts(6vw, 700);
+    }
+    &__choose {
+        @extend .main__welcome;
     }
     &__section {
         display: flex;
