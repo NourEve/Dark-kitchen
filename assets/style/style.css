@@ -423,12 +423,12 @@ body.dark .footer__ul a {
   }
   .header__menu__h1 {
     font-family: "Montserrat Alternates", sans-serif;
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: 400;
     background-color: rgba(168, 183, 214, 0.5);
     border-radius: 50%;
     padding: 7% 7% 7% 7%;
-    margin: -150% 0% 30% 0%;
+    margin: -50% 0% 15% 0%;
   }
   .header__nav__card {
     width: 100%;
@@ -445,7 +445,7 @@ body.dark .footer__ul a {
     background-color: rgba(224, 106, 124, 0.5);
   }
   .header__nav__card--img {
-    width: 3vw;
+    width: 2.5vw;
     height: auto;
   }
   .header__nav__card p {
@@ -460,18 +460,20 @@ body.dark .footer__ul a {
     margin-left: 0%;
   }
   .header__colormode {
+    background-color: rgba(224, 106, 124, 0);
     display: block;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     position: fixed;
-    width: 6%;
+    width: 4%;
     min-height: 100%;
-    margin-top: 65%;
-    margin-left: 3.5%;
+    margin-top: 51%;
+    margin-left: 4%;
     padding: 0;
   }
   .header__colormode--style {
-    width: 3vw;
+    width: 1.5vw;
     height: auto;
     margin-top: -100%;
   }
@@ -479,20 +481,21 @@ body.dark .footer__ul a {
     display: block;
     flex-direction: column;
     position: fixed;
-    z-index: 0;
     padding-right: 0;
     padding-left: 9.7%;
     background-color: #F6C8BB;
     top: 0;
     right: 0;
-    width: 25%;
+    width: 13%;
+    height: 100%;
   }
   .header__order__cart {
     background-color: #FEF6EB;
     background-color: #FEF6EB;
     margin: 50% 0% 10% 0%;
     width: 50%;
-    padding: 30%;
+    height: 25%;
+    padding: 35%;
     border-radius: 2vw;
     text-align: center;
     color: #BF5555;
@@ -502,18 +505,19 @@ body.dark .footer__ul a {
     background-color: #FEF6EB;
     width: 50%;
     padding: 3%;
+    margin-top: 10%;
     border-radius: 2vw;
     text-align: center;
   }
   .header__order__cart--title {
     font-family: "Montserrat Alternates", sans-serif;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     font-weight: 400;
     margin-right: 5%;
   }
   .header__order__cart--price {
     font-family: "Montserrat Alternates", sans-serif;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     font-weight: 700;
   }
   .header__cart__row__item {

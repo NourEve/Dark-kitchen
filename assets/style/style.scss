@@ -461,7 +461,6 @@ body.dark {
             background-color: $roseClear;
             width:10%;
             min-height: 100%;
-            //z-index: 1;
             position: fixed;
             left: 0;
             top: 0;
@@ -469,11 +468,11 @@ body.dark {
         &__menu {
             display: block;
             &__h1{
-                @include fonts(3vw, 400);
+                @include fonts(2vw, 400);
                 background-color: $blue;
                 border-radius: 50%;
                 padding: 7% 7% 7% 7%;
-                margin: -150% 0% 30% 0%;
+                margin: -50% 0% 15% 0%;
             }
         }
         &__nav {
@@ -491,7 +490,7 @@ body.dark {
                     background-color: $rose;
                 }
                 &--img {
-                    width: 3vw;
+                    width: 2.5vw;
                     height: auto;
                 }
                 p {
@@ -506,18 +505,19 @@ body.dark {
             }
         }
         &__colormode {
+            background-color: rgba(224, 106, 124, 0);
             display: block;
-            flex-direction: column;
-            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
             position: fixed;
-            width:6%;
+            width:4%;
             min-height: 100%;
-            margin-top:65%;
-            margin-left: 3.5%;
-
+            margin-top:51%;
+            margin-left: 4%;
             padding: 0;
             &--style {
-                width: 3vw;
+                width: 1.5vw;
                 height: auto;
                 margin-top:-100%;
             }
@@ -526,25 +526,21 @@ body.dark {
             display: block;
             flex-direction: column;
             position: fixed;
-            z-index: 0;
             padding-right: 0;
             padding-left: 9.7%;
             background-color: $roseClear;
             top: 0;
             right: 0;
-            width: 25%;
-            //margin-left: 65%;
-            //margin-top: -30;
-            //transform: translateX(100%);
-            //overflow: hidden;
-             //max-height: 0;
+            width: 13%;
+            height: 100%;
             
             &__cart {
                 background-color: $clear;
                 background-color: $clear;
                 margin: 50% 0% 10% 0%;
                 width: 50%;
-                padding: 30%;
+                height:25%;
+                padding: 35%;
                 border-radius: 2vw;
                 text-align: center;
                 color: $red;
@@ -553,15 +549,16 @@ body.dark {
                     background-color: $clear;
                     width: 50%;
                     padding: 3%;
+                    margin-top: 10%;
                     border-radius: 2vw;
                     text-align: center
                 }
                 &--title {
-                    @include fonts(2.5vw, 400);
+                    @include fonts(1.5vw, 400);
                     margin-right: 5%;
                 }
                 &--price {
-                    @include fonts(2.5vw, 700);
+                    @include fonts(1.5vw, 700);
                 }
             }
         }
