@@ -27,11 +27,11 @@ $font : "font-family: 'Montserrat Alternates', sans-serif";
 body {
     background-color: $clear;
     width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
 
 }
-
 
 .header {
     &__fixe {
@@ -47,7 +47,7 @@ body {
         width: 100%;
         top: 0;
         left: 0;
-        z-index: 1;
+        z-index: 2;
         &__burger {
             img {
                 width: 10vw;
@@ -77,14 +77,14 @@ body {
         top: 0;
         left: 0;
         width: 50%;
+        //height: 100%;
         margin-left: -10%;
         margin-top: -5%;
-        //transform: translateX(-100%);
-        //overflow: hidden;
-        //max-width: 0;
-        display: none;
-        //position: absolute;
-        //z-index: 1;
+        margin-left: -150%;
+        transition: all ease-in-out .5s;
+        position: fixed;
+        backdrop-filter: 5px;
+        z-index: 1;
         &__h1{
             margin-top: 55%;
             @include fonts(14vw, 400);
@@ -119,7 +119,12 @@ body {
         }
     }
     &__colormode {
-        @extend .header__menu;
+        display: flex;
+        padding-left: 36%;
+        //background-color: $roseClear;
+        top: 0;
+        left: 0;
+        width: 50%;
         flex-direction: row;
         justify-content: space-evenly;
         margin-left: -40%;
@@ -137,15 +142,11 @@ body {
         padding-right: 0;
         padding-left: 20%;
         background-color: $roseClear;
-        top: 0;
-        right: 0;
         width: 50%;
+        margin-top: -100%;
         margin-left: 30%;
-        margin-top: -5%;
-        //transform: translateX(100%);
-        //overflow: hidden;
-        //max-height: 0;
-        display: none;
+        transition: margin-top ease-in-out .5s;
+        position: fixed;
         &__cart {
             background-color: $clear;
             margin: 65% 10% 10% -20%;
@@ -202,6 +203,20 @@ body {
             }
         }
     }
+}
+
+//transitions
+.displayed {
+    margin-left: 0;
+    transition: all ease-in-out .5s;
+    margin-right: 0;
+}
+.header__order.displayed {
+    margin-left: 30%;
+    margin-top: -5%;
+    top: 0;
+    right: 0;
+    transition: margin-top ease-in-out .5s;
 }
 
 .main {
