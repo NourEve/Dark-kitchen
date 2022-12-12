@@ -12,6 +12,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   align-content: space-between;
+  position: static;
   gap: 15vw;
   width: 100%;
   top: 0;
