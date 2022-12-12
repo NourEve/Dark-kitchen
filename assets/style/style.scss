@@ -506,16 +506,17 @@ body.dark {
             }
         }
         &__order {
-            display: flex;
+            display: block;
             flex-direction: column;
+            position: fixed;
             padding-right: 0;
-            padding-left: 10%;
+            padding-left: 9.7%;
             background-color: $roseClear;
             top: 0;
             right: 0;
             width: 25%;
-            margin-left: 65%;
-            margin-top: -19.1;
+            //margin-left: 65%;
+            //margin-top: -30;
         //transform: translateX(100%);
         //overflow: hidden;
         //max-height: 0;

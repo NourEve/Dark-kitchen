@@ -450,16 +450,15 @@ body.dark .footer__ul a {
     margin-top: -100%;
   }
   .header__order {
-    display: flex;
+    display: block;
     flex-direction: column;
+    position: fixed;
     padding-right: 0;
-    padding-left: 10%;
+    padding-left: 9.7%;
     background-color: #F6C8BB;
     top: 0;
     right: 0;
     width: 25%;
-    margin-left: 65%;
-    margin-top: -19.1;
     display: block;
   }
   .header__order__cart {
