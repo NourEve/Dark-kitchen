@@ -8,6 +8,7 @@
   <meta name="description" content="Authors: Laura, Pierre, Nadim and Nour. Creation of a web page for a dark kitchen in the context of the BeCode training.">
   <link rel="shortcut icon" href="./assets/images/pizza.png" type="image/x-icon">
   <link rel="stylesheet" href="./assets/style/style.css">
+  <link rel="stylesheet" media="screen and (min-width: 768px)" href="assets/style/desktop.css">
 
     <script src="./assets/scripts/card_generation.js" defer></script>
     <script src="./assets/scripts/dark_mode.js" defer></script>
@@ -19,7 +20,7 @@
 <body>
   <header class="header">
     <div class="header__fixe">
-      <div class="header__fixe__burger">
+      <div class="header__fixe__burger" onclick="displayMenu()">
         <img src="./assets/images/icones/menu.webp" alt="icon menu">
       </div>
       <div class="header__fixe__logo">
@@ -31,6 +32,7 @@
     </div>
 
     <div class="header__menu">
+      <div class="header__all">
       <h1 class="header__menu__h1">Hi!</h1>
       <nav class="header__nav">
         <div class="header__nav__card header__nav__card--bleu">
@@ -67,6 +69,7 @@
       <div class="header__colormode__sun header__colormode--style">
         <img class="header__colormode--style" src="./assets/images/icones/sun.webp" alt="icon sun light_mode">
       </div>
+    </div>
     </div>
 
       <!-- TEST PURPOSES ONLY -->
