@@ -517,10 +517,10 @@ body.dark {
             width: 25%;
             //margin-left: 65%;
             //margin-top: -30;
-        //transform: translateX(100%);
-        //overflow: hidden;
-        //max-height: 0;
-            display: block;
+            //transform: translateX(100%);
+            //overflow: hidden;
+             //max-height: 0;
+            
             &__cart {
                 background-color: $clear;
                 background-color: $clear;
@@ -553,29 +553,29 @@ body.dark {
                     margin-top: 5%;
                 }
                 &__title {
-                    @include fonts(2.5vw, 700);
+                    @include fonts(1.5vw, 700);
                 }
             }
             &__price {
-                @include fonts(2.5vw, 400);
+                @include fonts(1.7vw, 400);
                 margin-left: 35%;
             }
             &__quantity {
                 &__input {
                     color: $red;
                     background-color: $clear;
-                    width: 10%;
-                    margin-left: 7%;
+                    width: 25%;
+                    margin-left: -7%;
                     text-align: end;
-                    @include fonts(2.5vw, 700);
+                    @include fonts(1.5vw, 700);
                     border: 2px solid $red;
                     margin-bottom: 5%;
                 }
                 &__remove{
                     color: $red;
                     background-color: $clear;
-                    width: 30%;
-                    @include fonts(2.5vw, 300);
+                    width: 70%;
+                    @include fonts(1.5vw, 300);
                     border: 2px solid $red;
                 }
             }
