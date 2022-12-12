@@ -418,8 +418,6 @@ body.dark {
             background-color:rgba(168, 183, 214,0);
             gap: 15vw;
             width: 100%;
-            top: 0;
-            left: 0;
             &__burger {
                 img {
                 display: none;
@@ -446,10 +444,7 @@ body.dark {
             background-color: $roseClear;
             width:10%;
             min-height: 100%;
-            overflow: visible;
-            //transform: translateX(100%);
-            //margin-top: -7%;
-            z-index: 1;
+            //z-index: 1;
             position: fixed;
             left: 0;
             top: 0;
@@ -494,16 +489,14 @@ body.dark {
             }
         }
         &__colormode {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            background-color: $roseClear;
-            width:10%;
-            min-height: 100%;
             display: block;
-            z-index: 1;
+            flex-direction: column;
+            justify-content: center;
             position: fixed;
-            margin-top:-10%;
+            width:6%;
+            min-height: 100%;
+            margin-top:65%;
+            margin-left: 3.5%;
 
             padding: 0;
             &--style {
@@ -516,13 +509,13 @@ body.dark {
             display: flex;
             flex-direction: column;
             padding-right: 0;
-            padding-left: 20%;
+            padding-left: 10%;
             background-color: $roseClear;
             top: 0;
             right: 0;
-            width: 30%;
-            margin-left: 50%;
-            margin-top: -5%;
+            width: 25%;
+            margin-left: 65%;
+            margin-top: -19.1;
         //transform: translateX(100%);
         //overflow: hidden;
         //max-height: 0;

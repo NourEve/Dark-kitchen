@@ -45,24 +45,8 @@ body {
   width: 50%;
   margin-left: -10%;
   margin-top: -5%;
-  /* display: none; */
+  display: none;
 }
-
-.header__menu {
-  margin-left: -150%;
-  transition: all ease-in-out .5s;
-  position: fixed;
-  backdrop-filter: 5px;
-
-}
-
-
-.displayed {
-  margin-left: 0;
-  transition: all ease-in-out .5s;
-  margin-right: 0;
-}
-
 .header__menu__h1 {
   margin-top: 55%;
   font-family: "Montserrat Alternates", sans-serif;
@@ -115,18 +99,12 @@ body {
   padding-right: 0;
   padding-left: 20%;
   background-color: #F6C8BB;
-  margin-top: -100%;
-  margin-left: 30%;
-  width: 50%;
-  transition: margin-top ease-in-out .5s;
-}
-
-.header__order.displayed {
-  margin-left: 30%;
-  margin-top: -5%;
   top: 0;
   right: 0;
-  transition: margin-top ease-in-out .5s;
+  width: 50%;
+  margin-left: 30%;
+  margin-top: -5%;
+  display: none;
 }
 .header__order__cart {
   background-color: #FEF6EB;
@@ -390,8 +368,6 @@ body.dark .footer__ul a {
     background-color: rgba(168, 183, 214, 0);
     gap: 15vw;
     width: 100%;
-    top: 0;
-    left: 0;
   }
   .header__fixe__burger img {
     display: none;
@@ -412,8 +388,6 @@ body.dark .footer__ul a {
     background-color: #F6C8BB;
     width: 10%;
     min-height: 100%;
-    overflow: visible;
-    z-index: 1;
     position: fixed;
     left: 0;
     top: 0;
@@ -460,16 +434,14 @@ body.dark .footer__ul a {
     margin-left: 0%;
   }
   .header__colormode {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: #F6C8BB;
-    width: 10%;
-    min-height: 100%;
     display: block;
-    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
     position: fixed;
-    margin-top: -10%;
+    width: 6%;
+    min-height: 100%;
+    margin-top: 65%;
+    margin-left: 3.5%;
     padding: 0;
   }
   .header__colormode--style {
@@ -481,13 +453,13 @@ body.dark .footer__ul a {
     display: flex;
     flex-direction: column;
     padding-right: 0;
-    padding-left: 20%;
+    padding-left: 10%;
     background-color: #F6C8BB;
     top: 0;
     right: 0;
-    width: 30%;
-    margin-left: 50%;
-    margin-top: -5%;
+    width: 25%;
+    margin-left: 65%;
+    margin-top: -19.1;
     display: block;
   }
   .header__order__cart {
