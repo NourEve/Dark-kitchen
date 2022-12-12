@@ -408,13 +408,15 @@ body.dark {
     }
     
     .header {
+       
         &__fixe {
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
             align-items: center;
             align-content: space-between;
-            position: static;
+            position: sticky; 
+            z-index: 1;
             background-color:rgba(168, 183, 214,0);
             gap: 15vw;
             width: 100%;
@@ -509,6 +511,7 @@ body.dark {
             display: block;
             flex-direction: column;
             position: fixed;
+            z-index: 0;
             padding-right: 0;
             padding-left: 9.7%;
             background-color: $roseClear;

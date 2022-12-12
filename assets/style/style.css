@@ -364,7 +364,9 @@ body.dark .footer__ul a {
     justify-content: flex-end;
     align-items: center;
     align-content: space-between;
-    position: static;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
     background-color: rgba(168, 183, 214, 0);
     gap: 15vw;
     width: 100%;
@@ -453,6 +455,7 @@ body.dark .footer__ul a {
     display: block;
     flex-direction: column;
     position: fixed;
+    z-index: 0;
     padding-right: 0;
     padding-left: 9.7%;
     background-color: #F6C8BB;
