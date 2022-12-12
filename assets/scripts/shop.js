@@ -73,7 +73,6 @@ function addItemToCart(title, price) {
 function removeCartItem(event) {
   var buttonClicked = event.target;
   buttonClicked.parentElement.parentElement.remove();
-  articles = articles.filter(v => v !== title);
   updateTotal();
   console.table(articles)
 }
