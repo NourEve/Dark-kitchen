@@ -87,13 +87,13 @@ body {
         z-index: 1;
         &__h1{
             margin-top: 55%;
-            @include fonts(14vw, 400);
+            @include fonts(10vw, 400);
         }
     }
     &__nav {
         &__card {
             width: 30%;
-            margin: 0% 20% 10% -20%;
+            margin: 0% 20% 6% -20%;
             padding: 5% 20% 5% 20%;
             text-align: center;
             border-radius: 5vw;
@@ -104,14 +104,14 @@ body {
                 background-color: $rose;
             }
             &--img {
-                width: 10vw;
+                width: 7vw;
                 height: auto;
             }
             p {
                 font-family: $font;
                 margin-top: -5%;
                 margin-bottom: 0%;
-                @include fonts(5vw, 400);
+                @include fonts(4vw, 400);
                 color: $red;
                 width: 150%;
                 margin-left: -25%;
