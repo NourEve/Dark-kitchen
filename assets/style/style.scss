@@ -27,11 +27,11 @@ $font : "font-family: 'Montserrat Alternates', sans-serif";
 body {
     background-color: $clear;
     width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
 
 }
-
 
 .header {
     &__fixe {
@@ -47,12 +47,13 @@ body {
         width: 100%;
         top: 0;
         left: 0;
-        z-index: 1;
+        z-index: 2;
         &__burger {
             img {
                 width: 10vw;
                 position: relative;
                 left: 0;
+                cursor: pointer;
             }
         }
         &__logo {
@@ -76,20 +77,23 @@ body {
         top: 0;
         left: 0;
         width: 50%;
+        //height: 100%;
         margin-left: -10%;
         margin-top: -5%;
-        //transform: translateX(-100%);
-        //overflow: hidden;
-        //max-height: 0;
+        margin-left: -150%;
+        transition: all ease-in-out .5s;
+        position: fixed;
+        backdrop-filter: 5px;
+        z-index: 1;
         &__h1{
             margin-top: 55%;
-            @include fonts(14vw, 400);
+            @include fonts(10vw, 400);
         }
     }
     &__nav {
         &__card {
             width: 30%;
-            margin: 0% 20% 10% -20%;
+            margin: 0% 20% 6% -20%;
             padding: 5% 20% 5% 20%;
             text-align: center;
             border-radius: 5vw;
@@ -100,14 +104,14 @@ body {
                 background-color: $rose;
             }
             &--img {
-                width: 10vw;
+                width: 7vw;
                 height: auto;
             }
             p {
                 font-family: $font;
                 margin-top: -5%;
                 margin-bottom: 0%;
-                @include fonts(5vw, 400);
+                @include fonts(4vw, 400);
                 color: $red;
                 width: 150%;
                 margin-left: -25%;
@@ -115,10 +119,15 @@ body {
         }
     }
     &__colormode {
-        @extend .header__menu;
+        display: flex;
+        padding-left: 36%;
+        //background-color: $roseClear;
+        top: 0;
+        left: 0;
+        width: 50%;
         flex-direction: row;
         justify-content: space-evenly;
-        margin-left: -27%;
+        margin-left: -40%;
         padding-right: 17%;
         padding-top: 5%;
         padding-bottom: 5%;
@@ -128,28 +137,96 @@ body {
         }
     }
     &__order {
-        @extend .header__menu;
+        display: flex;
         flex-direction: column;
-        //transform: translateX(100%);
+        padding-right: 0;
+        padding-left: 20%;
+        background-color: $roseClear;
+        width: 50%;
+        margin-top: -100%;
+        margin-left: 30%;
+        transition: margin-top ease-in-out .5s;
+        position: fixed;
         &__cart {
             background-color: $clear;
+            margin: 65% 10% 10% -20%;
+            padding: 5% 10% 5% 10%;
+            border-radius: 5vw;
+            color: $red;
             &__total {
+                color: $red;
+                background-color: $clear;
+                margin-bottom: 10%;
+                width: 60%;
+                padding: 5%;
+                border-radius: 5vw;
             }
             &--title {
-                @include fonts(5vw, 400);
+                @include fonts(6vw, 400);
+                margin-right: 10%;
             }
             &--price {
-                @include fonts(5vw, 400);
+                @include fonts(6vw, 700);
+            }
+        }
+    }
+    &__cart{
+        &__row{
+            &__item {
+                margin-top: 10%;
+            }
+            &__title {
+                @include fonts(4.9vw, 700);
+            }
+        }
+        &__price {
+            @include fonts(5vw, 400);
+            margin-left: 75%;
+        }
+        &__quantity {
+            &__input {
+                color: $red;
+                background-color: $clear;
+                width: 20%;
+                margin-left: 15%;
+                text-align: end;
+                @include fonts(5vw, 700);
+                border: 2px solid $red;
+                margin-bottom: 10%;
+            }
+            &__remove{
+                color: $red;
+                background-color: $clear;
+                width: 60%;
+                @include fonts(5vw, 300);
+                border: 2px solid $red;
             }
         }
     }
 }
 
+//transitions
+.displayed {
+    margin-left: 0;
+    transition: all ease-in-out .5s;
+    margin-right: 0;
+}
+.header__order.displayed {
+    margin-left: 30%;
+    margin-top: -5%;
+    top: 0;
+    right: 0;
+    transition: margin-top ease-in-out .5s;
+}
+
 .main {
     padding-top: 25%;
-    &__choose {
+    &__welcome {
         text-align: center;
         @include fonts(6vw, 700);
+    }
+    &__choose {
+        @extend .main__welcome;
     }
     &__section {
         display: flex;
@@ -211,7 +288,7 @@ body {
         &__description {
             text-align: end;
             margin-top: -8%;
-            @include fonts(3vw, 300);
+            @include fonts(3.1vw, 300);
         }
         &__price {
             margin-top: -8%;
@@ -259,7 +336,6 @@ body {
     }
 
 }
-
 //DarkMode
 body.dark {
     background-color: $dark;
@@ -276,7 +352,7 @@ body.dark {
         }
 
         &__menu{
-            @include darken ($roseClear);
+            @include darken($roseClear);
         &__h1{
             color: $clear;
         }
@@ -335,4 +411,338 @@ body.dark {
             }
         }
      }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: $clear;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header {
+       
+        &__fixe {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            align-content: space-between;
+            position: sticky; 
+            z-index: 1;
+            background-color:rgba(168, 183, 214,0);
+            gap: 15vw;
+            width: 100%;
+            &__burger {
+                img {
+                display: none;
+                }
+            }
+            &__logo {
+                img{
+                width: 15vw;
+                margin-right: 5vw;
+                }
+            }
+            &__panier {
+                img {
+                    width: 3vw;
+                    margin-right: 5vw;
+                }
+            }
+        }
+        &__all{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $roseClear;
+            width:10%;
+            min-height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+        &__menu {
+            display: block;
+            &__h1{
+                @include fonts(2vw, 400);
+                background-color: $blue;
+                border-radius: 50%;
+                padding: 7% 7% 7% 7%;
+                margin: -55% 0% 20% 0%;
+            }
+        }
+        &__nav {
+            &__card {
+                width: 100%;
+                margin: 10% 22% 20% -5%;
+                padding: 7% 10% 7% 10%;
+                text-align: center;
+                border-radius: 1vw;
+                cursor: pointer;
+                &--bleu {
+                    background-color: $blue;
+                }
+                &--rose {
+                    background-color: $rose;
+                }
+                &--img {
+                    width: 2.5vw;
+                    height: auto;
+                }
+                p {
+                    font-family: $font;
+                    margin-top: 3%;
+                    margin-bottom: 2%;
+                    @include fonts(0.8vw, 400);
+                    color: $red;
+                    width: 100%;
+                    margin-left: 0%;
+                }
+            }
+        }
+        &__colormode {
+            background-color: rgba(224, 106, 124, 0);
+            display: block;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            position: fixed;
+            width:3.5%;
+            margin-top: 49%;
+            margin-left: 4%;
+            padding: 0;
+            &--style {
+                width:2vw;
+                height: auto;
+                margin-top:-105%;
+            }
+        }           
+        
+        &__order {
+            display: block;
+            flex-direction: column;
+            position: fixed;
+            //z-index: 1;
+            padding-right: 0%;
+            padding-left: 9.7%;
+            background-color: $roseClear;
+            top: 0;
+            right: 0;
+            width: 13%;
+            height: 110%;
+            margin:0;
+            
+            &__cart {
+                background-color: $clear;
+                background-color: $clear;
+                margin: 100% 0% 10% 0%;
+                width: 50%;
+                height:25%;
+                padding: 35%;
+                border-radius: 2vw;
+                text-align: center;
+                color: $red;
+                &__total {
+                    color: $red;
+                    background-color: $clear;
+                    width: 50%;
+                    padding: 3%;
+                    margin-top: 10%;
+                    border-radius: 2vw;
+                    text-align: center
+                }
+                &--title {
+                    @include fonts(1.5vw, 400);
+                    margin-right: 5%;
+                }
+                &--price {
+                    @include fonts(1.5vw, 700);
+                }
+            }
+        }
+        &__cart{
+            &__row{
+                &__item {
+                    margin-top: 5%;
+                }
+                &__title {
+                    @include fonts(1.5vw, 700);
+                }
+            }
+            &__price {
+                @include fonts(1.7vw, 400);
+                margin-left: 35%;
+            }
+            &__quantity {
+                &__input {
+                    color: $red;
+                    background-color: $clear;
+                    width: 25%;
+                    margin-left: -7%;
+                    text-align: end;
+                    @include fonts(1.5vw, 700);
+                    border: 2px solid $red;
+                    margin-bottom: 5%;
+                }
+                &__remove{
+                    color: $red;
+                    background-color: $clear;
+                    width: 70%;
+                    @include fonts(1.5vw, 300);
+                    border: 2px solid $red;
+                }
+            }
+        }
+    }
+    .main {
+        margin:0;
+        &__welcome{
+            padding-left: 15%;
+            text-align: left;
+            @include fonts(1.5vw, 700);
+    
+        }
+        &__choose {
+            padding-left: 15%;
+            text-align: left;
+            @include fonts(1vw, 700);
+        }
+        &__section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 80%;
+            margin-left: 6%;
+        }
+    }
+    
+    .article {
+        border-radius: 2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 18vw;
+        height: 40vh;
+        margin: 3% 1% 2% 2%;
+        background-color: $roseClear;
+        
+        &__img {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            align-items: flex-end;
+            height: 25%;
+            margin-right: 10%;
+            margin-top: 4%;
+            
+            &__bg {
+                width: auto;
+                height: 100%;
+            }
+        }
+        &__addButton {
+            width: auto;
+            height: 15%;
+            position: relative;
+            right: 13vw;
+            bottom: 1vw;
+        }
+        &__name {
+            @include fonts(1.2vw, 700);
+            padding-right: 4%;
+            text-align: center;
+            width: 18vw;
+        }
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            background-color: $red;
+            width: 15vw;
+            height: 35vh;
+            border-radius: 2vw;
+            padding-right: 5%;
+            &__mainCat {
+                display: none;
+            }
+            &__subCat {
+                @include fonts(1.1vw, 400);
+                margin-top: 1%;
+            }
+            &__description {
+                text-align: end;
+                margin-top: -6%;
+                @include fonts(1vw, 300);
+            }
+            &__price {
+                margin-top: -6%;
+                margin-bottom: -6%;
+                background-color: $blue;
+                padding: 2%;
+                border-radius: 2vw;
+                @include fonts(1vw, 300);
+            }
+        }
+    }
+    
+    .pizzaMan {
+        width: 45%;
+        position: absolute;
+        left: 28%;
+        bottom: 35%;
+        opacity: 0.6;
+        z-index: -1;
+    }
+    
+    .footer{ 
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        background-color: $blue;
+        
+    
+    
+        &__h4{
+            @include fonts(1.5vw, 400);
+            width: 100%;
+            text-align: center;
+            
+            
+        }
+        &__ul{
+            @include fonts(1.5vw, 400);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-content: center;
+            align-items: center;
+            list-style-type: none;
+            a{
+                color: black;
+            }
+        }
+    
+    }
+
+    body.dark {
+        .header{
+            &__fixe{
+                background-color: rgba(168, 183, 214, 0);
+            }
+    }
+
+    &__menu{
+        @include darken($roseClear);
+    &__h1{
+        color: $clear;
+    }
+    }
+    &__order{
+        @include darken($roseClear);
+    }
+    }
 }
